@@ -34,10 +34,10 @@
     </div>
     <div class="col-1-2">
       <ul>
-        <li>See the <a href="#">repo</a> for more info</li>     
-        <li>I use <a href="#">Codekit</a> to manage this project. My config file is in the repo, if you're a Codekit user.</li>
-        <li>I'm using the (very customizable) jQuery <a href="#">mmenu</a> system for mobile navigation.</li>
-        <li><strong>My build theory:</strong> Core SASS partials lay the groundwork, with one _theme.scss file with lots of <a href="#">BEM</a> styles to build up your design (so the core framework remains unchanged). You can follow this path, or get into the partials and customize them to your heart's content.</li>
+        <li>See the <a href="https://github.com/elmnt/stringer">repo</a> for more info</li>     
+        <li>I use <a href="https://incident57.com/codekit/">Codekit</a> to manage this project. My config file is in the repo, if you're a Codekit user.</li>
+        <li>I'm using the (very customizable) jQuery <a href="http://mmenu.frebsite.nl">mmenu</a> system for mobile navigation.</li>
+        <li><strong>My build theory:</strong> Core SASS partials lay the groundwork, with one _theme.scss file with lots of <a href="http://getbem.com">BEM</a> styles to build up your design (so the core framework remains unchanged). You can follow this path, or get into the partials and customize them to your heart's content.</li>
       </ul>
     </div>
   </div>
