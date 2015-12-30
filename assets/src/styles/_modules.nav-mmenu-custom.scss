@@ -1,0 +1,159 @@
+// ---------------- Customizations to the mmenu install
+
+/* Prevent the F.O.U.C. "flash"
+------------------------------------------------------- */
+/*
+Hide the menu until the document is done loading 
+(while it has not yet received the mm-menu classname)
+#my-menu:not( .mm-menu ) {
+   display: none !important;
+}
+nav:not(.mm-menu) {
+	display: none;
+}
+*/
+#menu:not( .mm-menu ) {
+   display: none !important;
+}
+
+/* Re-style the mobile menu
+------------------------------------------------------- */
+
+// darker background color for the menu
+#menu { 
+	background-color: $mmm-menu-background-color; 
+  font-family: $mmm-font; 
+  font-size: $mmm-font-size; 
+  line-height: $mmm-line-height; 
+  text-transform: $mmm-text-transform; 
+}
+
+/* ul.mm-list { padding: 5px 0 !important; } */
+/* .nav-mobile-main-demographic ul.mm-list li a.mm-subopen {} */
+
+ul.mm-list li { 
+	border-bottom: $mmm-li-border;
+}
+
+ul.mm-list li a { 
+	color: $mmm-link-color;
+	background-color: $mmm-link-background-color;
+	line-height: $mmm-line-height;
+
+	&:hover, 
+	&:active { 
+		background-color: $mmm-link-background-color-hover; 
+	}
+
+}
+
+// the mmenu link padding
+.mm-list > li > a,
+.mm-list > li > span {
+	padding: $mmm-link-padding;
+}
+
+// the sub-open button
+ul.mm-list li a.mm-subopen {
+	background-color: $mmm-subopen-button;
+	border-top: none!important;
+	border-right: none!important;
+	border-bottom: none!important;
+	border-left: $mmm-sub-border-left;
+	color: $mmm-sub-link-color; 
+	line-height: $mmm-sub-line-height;
+	height: $mmm-sub-height;
+}
+
+.mm-menu .mm-list > li > a.mm-subopen::after, 
+.mm-menu .mm-list > li > a.mm-subclose::before { border-color: $mmm-sub-arrow-color; }
+.mm-menu .mm-list > li > a.mm-subopen::before { border: $mmm-sub-arrow-border; }
+
+// get rid of the extra list item borders
+.mm-menu .mm-list > li::after {
+	border: none !important;
+}
+// get rid of the extra border under the subopen button
+.mm-menu .mm-list > li > a.mm-subopen::before {
+	border: none !important;
+}
+
+// ---------------------- the utility nav links (in the mmenu)
+
+.mm-menu .mobile__navutility__links {
+	/*
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: $mmm-li-border-color;
+	*/
+	//padding: $mmm-utility-nav-holder-padding;
+}
+.mm-menu .mobile__navutility__links li {
+	display: block !important;
+}
+.mm-menu .mobile__navutility__links a {
+	display: block !important;
+	padding: $mmm-link-padding;
+	background-color: $mmm-navutility-links-background;
+}
+
+// ---------------------- the social links (in the mmenu)
+
+.mm-menu .mobile__navutility__social {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: $mmm-li-border-color;
+	background-color: $mmm-navutility-social-background;
+	@extend .cf;
+}
+
+// the font-awesome icons
+.mm-menu .mobile__navutility__social .fa {}
+
+.mm-menu .mobile__navutility__social li {
+	display: inline-block !important;
+	float: left;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-top: none;
+	border-right: 1px solid $mmm-li-border-color;
+	border-bottom: none;
+}
+.mm-menu .mobile__navutility__social a {
+	display: block !important;
+	margin: 0 !important;
+	padding: ($mmm-link-padding + 3) ($mmm-link-padding + 5);
+	background-color: $mmm-navutility-social-background;
+	color: $mmm-li-border-color;
+}
+
+// ---------------------- the social links (in the mmenu)
+
+.mm-menu .mobile__navutility__search {
+	padding: $mmm-link-padding;
+}
+.mm-menu .navutility__input {
+	padding: $mmm-navutility-input-padding;
+	text-transform: $mmm-navutility-input-text-transform;
+	font-size: $mmm-navutility-input-font-size;
+	line-height: 1em !important;
+}
+.mm-menu .navutility__input:hover,
+.mm-menu .navutility__input:active {
+	background-color: $mmm-navutility-input-background-hover;
+}
+
+// the mmenu sub-open 'back' links
+.mm-menu .mm-subtitle a.mm-subclose {
+	color: $mmm-link-color !important;
+	text-transform: $mmm-subclose-text-transform;
+}
+
+.mm-list a.mm-subclose {
+	text-indent: 25px;
+}
+
+.mm-list a.mm-subclose::before {
+	left: 1rem !important;
+	margin-bottom: -13px;
+}

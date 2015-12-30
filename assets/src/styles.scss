@@ -1,0 +1,82 @@
+
+/* TO-DOs
+--------------------------------------------
+- https://github.com/clintonhalpin/common-tests/blob/master/README.md
+- a better footer
+
+background: #d2b48c; // old browsers
+background: -webkit-linear-gradient(#d2b48c,#ffd700); // Chrome 10-25, Safari 5.1-6
+background: linear-gradient(#d2b48c,#ffd700); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+
+https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
+
+*/
+
+@import "variables";
+
+// ----------- Tools
+
+@import "styles/tools.mixins";
+@import "styles/tools.functions";
+
+// ----------- Generic
+
+//@import "styles/generic.normalize";
+@import "styles/generic.reset";
+@import "styles/generic.box-sizing";
+
+// ----------- Base
+
+@import "styles/base";
+@import "styles/base.page";
+@import "styles/base.images";
+@import "styles/base.links";
+@import "styles/base.type";
+
+// ----------- Modules (active)
+
+@import "styles/modules.form-hack";
+@import "styles/modules.buttons";
+@import "styles/modules.tables";
+@import "styles/modules.layout"; //the grid
+@import "styles/modules.nav-global"; //global nav settings
+@import "styles/modules.nav-utility"; //the (top) "utility" nav bar
+@import "styles/modules.nav-main"; //the main site nav
+@import "styles/modules.responsiveslides"; //responsive slideshow
+@import "styles/modules.panel";
+@import "styles/modules.accordion";
+
+// ----------- Modules (inactive)
+/* 
+@import "styles/modules.alerts"; 
+@import "styles/modules.bg-slideshow.scss"; //full-page background image slideshow
+@import "styles/_modules.breadcrumbs";
+@import "styles/modules.headroom"; //styles for the headroom.js plugin
+*/
+
+// ----------- Modules: Part 2 (more complex add-ons)
+
+/* 
+Mobile Nav (mmenu)
+source: http://mmenu.frebsite.nl
+*/
+
+@import "mmenu/jquery.mmenu.all";
+@import "styles/modules.nav-mmenu-custom"; //my over-write styles for the mmenu
+
+// ----------- Vendor
+
+//@import "styles/vendor.plugin";
+
+// ----------- Our design
+
+@import "theme";
+
+// ----------- Trumps
+
+@import "styles/trumps";
+
+// ----------- Media
+
+@import "responsive";
+@media print { @import "styles/media.print"; }

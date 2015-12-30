@@ -1,0 +1,53 @@
+// ----------- Styles for the headroom.js plugin
+
+/* 
+At it's most basic headroom.js simply adds and removes CSS classes 
+from an element in response to a scroll event:
+
+<!-- initially -->
+<header class="headroom">
+
+<!-- scrolling down -->
+<header class="headroom headroom--unpinned">
+
+<!-- scrolling up -->
+<header class="headroom headroom--pinned">
+*/
+
+.headroom--pinned {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom,
+.headroom--pinned,
+.headroom--unpinned,
+.headroom--top,
+.headroom--not-top {
+  //transition: transform 500ms linear;
+  @include trans(500ms);
+  @include forcesmooth;
+}
+
+.headroom--pinned {
+  //transform: translateY(0%);
+  @include transY(0%);
+}
+.headroom--unpinned {
+  //transform: translateY(-100%);
+  @include transY(-100%);
+}
+/*
+.headroom--top {
+  transform: translateY(-100%);
+}
+.headroom--not-top {
+  transform: translateY(-100%);
+}
+*/

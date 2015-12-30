@@ -1,0 +1,22 @@
+/* Base - Links
+------------------------------------------------------- */
+a,
+a:visited {
+  text-decoration: $link-text-decoration;
+  color: $link-color;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: $link-text-decoration-hover;
+  color: $link-color-hover;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+a:visited {
+  outline: 0px;
+}

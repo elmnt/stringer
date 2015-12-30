@@ -1,0 +1,23 @@
+/* Modules - Alerts
+------------------------------------------------------- */
+
+.alert {
+  margin: 0 0 $base-spacing;
+  padding: $base-spacing-small $base-spacing;
+  color: red;
+  border-radius: $border-radius;
+  background: $important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.alert--info {
+  background: white;
+}
+
+.alert--success {
+  background: $success;
+}
+
+.alert--warning {
+  background: $warning;
+}

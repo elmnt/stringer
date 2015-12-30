@@ -1,0 +1,517 @@
+
+// ----------- start with the global font size
+
+$base-font-size-lg: 20px;
+$base-font-size-md: 18px;
+$base-font-size-sm: 16px;
+
+// ----------- reset these with each of the three base media queries
+
+$base-font-size: $base-font-size-lg;
+$base-spacing: $base-font-size;
+
+// ----------- variables specifically for our mixins
+
+$global-trans-time: .5s;
+$global-easing: ease-out;
+
+// ----------- global border radius (optional)
+
+$base-border-radius: 5px;
+
+// ----------- responsive breakpoints (placed here for more global use)
+
+$break-lg: 1600px;
+$break-md: 800px;
+$break-sm: 400px;
+
+/* Color Variables
+======================================== */
+
+// ----------- the primary brand color(s)
+
+/*
+I've used a very generic color scheme as a starting point.
+Add your color variables here to get started on your theme.
+*/
+
+$brand-color-0: #000;
+
+// ----------- site color scheme
+
+$site-color-1: #333;
+$site-color-2: #666;
+$site-color-3: #999;
+$site-color-4: #ccc;
+
+//$site-color-error: red;
+//$site-color-success: green;
+
+/* Tools
+======================================== */
+// styles/tools.mixins
+// styles/tools.functions
+
+/* Generic
+======================================== */
+// styles/generic.normalize
+// styles/generic.box-sizing
+
+/* Base
+======================================== */
+
+// Typekit info
+/*
+body: ff-tisa-web-pro 400 / 400  italic
+heads: futura-pt 400 / 500 / 500 italic
+*/
+
+// Google Fonts
+/*
+Open Sans 400/600/700
+*/
+
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: Georgia, Times, "Times New Roman", serif;
+$mono-font: "Consolas", Monaco, Menlo, "Courier New", monospace;
+
+// ----------- Open Sans weights
+
+$fw-normal: 400;
+$fw-semibold: 600;
+$fw-bold: 700;
+
+// ----------- base.scss
+
+$cmbox-default-background: $site-color-3;
+$cmbox-default-padding: 4rem;
+$cmbox-default-title: 2rem;
+
+// ----------- base.page.scss
+
+$page-background: white;
+$transition-time: 0.25s;
+
+// ----------- base.images.scss
+
+$img-vertical-align: middle;
+$figure-margin: 0;
+$figure-padding: 0; 
+$figcaption-margin: 5px 0 1rem 0;
+$figcaption-padding: 1rem;
+$figcaption-font-family: $sans;
+$figcaption-font-size: .75rem;
+$figcaption-line-height: 1.125rem;
+$figcaption-color: $site-color-1;
+$figcaption-background-color: $site-color-1;
+
+// ----------- base.links.scss
+
+$link-text-decoration: underline;
+$link-color: blue;
+$link-color-visited: purple;
+$link-text-decoration-hover: none;
+$link-color-hover: #999;
+
+// ----------- base.type.scss
+
+//$base-font-size:; // set on top, so it's more global
+$base-font-family: $sans;
+$base-line-height: 1.5em;
+$base-text-color: $site-color-1;
+$p-margin: 0 0 1rem 0; 
+$p-padding: 0;
+
+$list-margin: 0 0 1rem 1.25rem;
+
+$heading-font-family: $sans;
+$heading-font-weight: $fw-semibold;
+$heading-lighter-font-weight: $fw-normal;
+$heading-line-height: 1.25;
+$heading-margin: 1rem 0;
+$heading-padding: 0;
+$heading-color: $site-color-1;
+
+$h1: $base-font-size * 2.25 !default;
+$h2: $base-font-size * 1.75 !default;
+$h3: $base-font-size * 1.5 !default;
+$h4: $base-font-size * 1.25 !default;
+$h5: $base-font-size * 1.125 !default;
+$h6: $base-font-size !default;
+
+$h-transform: uppercase;
+
+$blockquote-margin: 0 0 $base-font-size 0;
+$blockquote-padding: 0 0 0 10px;
+$blockquote-color: $site-color-2;
+$blockquote-border-left: $site-color-2;
+
+// ----------- pre/code
+
+$pre-margin-bottom: 1em;
+
+// ----------- definition list
+
+$dt-font-weight: normal;
+$dt-margin: 1em 0 0 0;
+$dt-padding: 0;
+$dd-margin: 0;
+$dd-padding: 0;
+
+// ----------- horizontal rule
+
+$hr-margin-top: 1em;
+$hr-margin-bottom: $base-font-size - 1px;
+$hr-border: none;
+$hr-border-bottom: 1px solid $site-color-3;
+
+/* Modules
+======================================== */
+// styles/modules.accordions 
+// styles/modules.alerts 
+// styles/modules.bg-slideshow.scss // full-page background image slideshow
+// styles/_modules.breadcrumbs
+// styles/modules.buttons
+
+// ----------- buttons
+
+$button-color: white;
+$button-background-color: $brand-color-0;
+$button-text-transform: uppercase;
+$button-font-weight-default: bold;
+$button-font-weight: $fw-bold;
+$button-font-size: .7rem;
+$button-letter-spacing: 1px;
+$button-padding: 1rem 2rem;
+$button-margin: 1rem 0;
+
+// ----------- big buttons
+
+$button-big-padding: 2rem 4rem;
+$button-big-font-size: 1rem;
+
+// ----------- alternate color buttons
+
+$button-color-altone: $site-color-1;
+$button-color-alttwo: $site-color-2;
+
+/* Modules: styles/modules.form-hack
+======================================== */
+
+// ----------- form-hack font
+
+$fh-font-family: $sans !important;
+$fh-font-size: 14px;
+$fh-font-color: $base-text-color;
+
+// ----------- form-hack borders
+
+$fh-border-radius: 0px;
+$fh-border-width: 2px;
+$fh-border-style: solid;
+$fh-border-color: $base-text-color;
+
+// ----------- form-hack inputs, textareas, select, option
+
+$fh-input-height: 40px;
+$fh-input-width: 100%;
+$fh-input-max-width: 100%;
+$fh-input-bg-color: #fff;
+$fh-focus-bg-color: #fff;
+$fh-focus-border-color: $site-color-2;
+$fh-focus-font-color: $site-color-2;
+$fh-textarea-height: 200px;
+
+// ----------- form-hack select vendor styling
+
+$fh-allow-vendor-styling: true;
+
+// ----------- form-hack fieldsets & legends
+
+$fh-fieldset-bare: false;
+
+// ----------- form-hack buttons & input submits
+
+// $fh-button-height: 40px; // font-hack uses a specific button height
+$fh-button-height: auto; // but we want the padding to determine this
+$fh-button-width: 100%;
+$fh-button-max-width: 200px;
+
+// ----------- form-hack colors
+
+$fh-button-font-color: $fh-font-color;
+$fh-button-bg-color: $fh-focus-bg-color;
+$fh-button-hover-bg-color: $fh-border-color;
+$fh-button-hover-font-color: $fh-font-color;
+
+// ----------- form-hack layout
+
+$fh-centered: false;
+$fh-display: block;
+
+// ----------- styles/modules.tables
+
+$table-global-font-family: $sans;
+$table-global-font-size: .8rem;
+$table-global-line-height: 1.25em;
+$table-global-padding: .5rem;
+
+$table-hide-static-size: $break-sm; // hide static tables in mobile
+
+$table-border: 1px solid $base-text-color;
+$table-thead-background-color: $base-text-color;
+$table-thead-th-color: white;
+$table-th-text-align: left;
+$table-th-font-family: $sans;
+$table-th-font-weight: 600;
+$table-th-td-padding: 1rem;
+$table-th-td-line-height: inherit;
+$table-th-vertical-align: bottom;
+$table-td-vertical-align: top;
+$table-td-text-align: left;
+
+$admin-table-border-color: $base-text-color;
+$admin-table-thead-background-color: $base-text-color; 
+
+// styles/modules.headroom // styles for the headroom.js plugin
+
+// styles/modules.layout // the grid & overall site structure
+
+// Grid
+// Setting container-max-width at 100% allows for edge-to-edge layout 
+// (and edge-to-edge background color even when a wrap is used)
+// The (optional) wrap sets a max content width
+
+// |-------------------- screen --------------------|
+// |--p--|------------ container -------------|--p--|
+// |----------|---------- wrap ----------|----------|
+
+$container-max-width: 100%;
+$container-pad: 0 1rem;
+$container-pad-tablet: 0 .75rem;
+$container-pad-mobile: 0 .5rem;
+$wrap-max-width: 1200px;
+$wrap-min-width: 100px;
+
+$pad: 1rem;
+$pad-small: .5rem;
+$pad-big: 2rem;
+
+// ----------- modules.nav-global.scss
+
+$nav-global-font: $sans;
+
+$navutility-global-font-size: 13px;
+$navmain-global-font-size: 14px;
+$nav-global-line-height: 1em;
+$nav-global-font-weight: $fw-normal;
+
+// ----------- modules.nav-utility.scss
+
+// a padding variable that will be used in various utility nav elements
+$navutility-uniform-pad: 10px;
+
+$navutility-holder-bg: $site-color-1; // the container bg
+$navutility-bg: $site-color-1; 
+$navutility-color: $site-color-4; 
+$navutility-links-pad: 10px 1rem;
+$navutility-social-icons-pad: 10px;
+//$utility-search-button-pad: 10px; 
+$navutility-hover: white; 
+$navutility-bg-hover: $site-color-1; 
+$navutility-font-weight: $fw-semibold;
+
+$navutility-text-transform: uppercase;
+
+// ----------- modules.nav-utility.scss (search bar)
+
+$navbar-search-padding: 10px;
+$navbar-search-bg-color: white; 
+$navbar-search-font-size: $navutility-global-font-size; 
+$navbar-search-line-height: $nav-global-line-height;
+$navbar-search-bg-color-hover: darken($navbar-search-bg-color, 15%);
+$navbar-search-bg-color-focus: darken($navbar-search-bg-color, 15%);
+$navbar-search-bg-color-active: darken($navbar-search-bg-color, 15%);
+
+// ----------- modules.nav-main.scss
+
+$navmain-text-transform: none;
+
+$navmain-holder-bg: $site-color-2; // the container bg
+$navmain-button-pad: 1rem; 
+$navmain-bg: $site-color-2; 
+$navmain-bg-hover: $site-color-3; 
+$navmain-color: white; 
+$navmain-color-hover: white; 
+//$brand-pad: 40px 0;
+
+// ----------- the navbar search button
+
+$button-navbar-background-color: $brand-color-0;
+$button-navbar-background-color-hover: $brand-color-0;
+$button-navbar-background-color-active: $brand-color-0;
+
+// ----------- the navbar social icons
+
+$navbar-social-icons-margin: 0;
+$navbar-social-icons-pad: 10px;
+$navbar-social-icons-font-size: $navutility-global-font-size;
+$navbar-social-icons-line-height: $nav-global-line-height;
+
+// ----------- modules.nav-mobile.scss
+
+$nav-mobile-button-pad: 1rem;
+
+// ----------- styles/modules.responsiveslides // basic, responsive slideshow
+
+$rslides-margin-bottom: 0;
+$rslides-tap-color: rgba(0,0,0,0);
+$rslides-nav-top: 50%;
+$rslides-nav-left: 0;
+$rslides-nav-z-index: 99;
+$rslides-nav-opacity: 0.5;
+$rslides-nav-opacity-active: 1.0;
+$rslides-tabs-margin: 1rem 0 !important;
+$rslides-tabs-li-margin: 0 1rem 0 0;
+$rslides-tabs-radius: 15px;
+$rslides-tabs-bg-hex: #ccc;
+$rslides-tabs-bg-rgb: rgba(0,0,0, .2);
+$rslides-tabs-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+$rslides-tabs-width: 15px;
+$rslides-tabs-height: 15px;
+$rslides-tabs-here-hex: #222;
+$rslides-tabs-here-rgb: rgba(0,0,0, .8);
+$rslides-caption-display: block;
+$rslides-caption-top: 0;
+$rslides-caption-bottom: 0;
+$rslides-caption-left: 0;
+$rslides-caption-right: 0;
+$rslides-caption-padding: 0 3rem;
+$rslides-caption-text-align: center;
+$rslides-caption-bg-hex: #000;
+$rslides-caption-bg-rgb: rgba(0,0,0, 0);
+$rslides-caption-font-margin: 0;
+$rslides-caption-font-padding: 0;
+$rslides-caption-font-size: 3rem;
+$rslides-caption-line-height: 1.125em;
+$rslides-caption-font-color: white;
+$rslides-caption-font-text-shadow: 3px 3px 6px #000;
+
+// some responsive caption sizes
+$rslides-caption-font-size-lg: 2.5rem;
+$rslides-caption-font-size-md: 2rem;
+$rslides-caption-font-size-sm: 1.5rem;
+
+// ----------- styles/modules.panel
+
+$panel-background-color: $site-color-3;
+$panel-max-width: 600px;
+$panel-padding: 4rem;
+$panel-padding-tablet: 2rem;
+$panel-padding-mobile: 1rem;
+$panel-border: 5px solid $site-color-3;
+$panel-border-radius: $base-border-radius;
+$panel-title-color: white;
+$panel-copy-color: $base-text-color;
+
+// ----------- panels for form holder
+
+$panel-form-border: 5px solid $site-color-3;
+$panel-form-background-color: $site-color-3;
+$panel-form-padding: 2rem;
+
+// ----------- styles/modules.accordion
+
+/* Modules: Part 2 (complex add-ons)
+======================================== */
+/* 
+Mobile Nav - mmenu nav
+http://mmenu.frebsite.nl
+======================================== */
+// mmenu/mmenu-demo
+// mmenu/jquery.mmenu.all
+
+// ----------- the mobile nav trigger
+
+$mmenu-trigger-align: right;
+
+/* my custom mmenu styles
+======================================== */
+
+$mmm-menu-background-color: $site-color-2 !important;
+
+// ----------- mmenu font settings
+
+$mmm-font: $sans;
+$mmm-font-size: $base-font-size;
+$mmm-line-height: 1em;
+$mmm-text-transform: none;
+
+// ----------- mmenu borders
+
+$mmm-li-border: 1px solid white;
+/*
+This variable is just so we can carry the same border
+over to the utility nav items, which appear below the 
+main nav items in mobile mode
+*/
+$mmm-li-border-color: white;
+
+// ----------- mmenu link styles
+
+$mmm-link-color: $base-text-color; 
+$mmm-link-background-color: $site-color-2;
+$mmm-link-background-color-hover: $brand-color-0;
+$mmm-link-padding: 12px;
+
+// ----------- mmenu the subopen buttons
+
+$mmm-subopen-button: $brand-color-0;
+
+// ----------- mmenu submenus
+
+$mmm-sub-background-color: $site-color-2;
+$mmm-sub-border-left: 1px solid white;
+$mmm-sub-link-color: $base-text-color; 
+$mmm-sub-line-height: 1em;
+$mmm-sub-height: 100%;
+
+// ----------- mmenu subopen arrows
+
+$mmm-sub-arrow-color: rgba(255,255,255,1) !important;
+$mmm-sub-arrow-border: none !important;
+
+// ----------- the mmenu utility nav links (they fall under the mmenu main nav links)
+
+$mmm-utility-nav-holder-padding: $mmm-link-padding;
+
+// ----------- mmenu navutility styles
+
+$mmm-navutility-links-background: #aaa;
+$mmm-navutility-social-background: #888;
+$mmm-navutility-input-padding: .75rem 1rem .65rem 1rem !important;
+$mmm-navutility-input-text-transform: uppercase !important;
+$mmm-navutility-input-font-size: .75rem !important;
+$mmm-navutility-input-background-hover: #eee;
+
+// ----------- the mmenu sub-open menus 'back' link
+
+$mmm-subclose-text-transform: uppercase;
+
+/* Vendor
+======================================== */
+// styles/vendor.plugin
+/*
+Now we apply the custom design on top of this SASS kit.
+Remember to @extend classes, @include mixins, and use BEM styling where appropriate.
+*/
+// custom
+
+/* Trumps
+======================================== */
+// styles/trumps
+
+/* Media
+======================================== */
+// responsive
+// styles/media.print

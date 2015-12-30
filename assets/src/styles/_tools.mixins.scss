@@ -1,0 +1,123 @@
+/* Mixins
+======================================== */
+
+// Marc Jenkins breakpoint mixin
+// https://github.com/marcjenkins
+/*
+@mixin breakpoint($size) {
+  @if $size == lg {
+    @media screen and (max-width: $break-lg) {
+      @content;
+    } 
+  }
+  @if $size == md {
+    @media screen and (max-width: $break-md) {
+      @content;
+    } 
+  }
+  @if $size == sm {
+    @media screen and (max-width: $break-sm) {
+      @content;
+    } 
+  }
+  @if $size == xs {
+    @media screen and (max-width: $break-xs) {
+      @content;
+    } 
+  }  
+}
+*/
+
+// border-box
+@mixin bbox {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+// content box
+@mixin cbox {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box; 
+}
+
+// border radius (uniform)
+// We should use a global setting instead of this
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// border radius (set each corner)
+@mixin border-radius-select($radtl,$radtr,$radbr,$radbl) {
+    -webkit-border-top-left-radius: $radtl;
+   -webkit-border-top-right-radius: $radtr;
+-webkit-border-bottom-right-radius: $radbr;
+ -webkit-border-bottom-left-radius: $radbl;
+		    -moz-border-radius-topleft: $radtl;
+		   -moz-border-radius-topright: $radtr;
+		-moz-border-radius-bottomright: $radbr;
+		 -moz-border-radius-bottomleft: $radbl;
+			   -ms-border-radius-topleft: $radtl;
+			  -ms-border-radius-topright: $radtr;
+		 -ms-border-radius-bottomright: $radbr;
+			-ms-border-radius-bottomleft: $radbl;
+				    border-top-left-radius: $radtl;
+				   border-top-right-radius: $radtr;
+				border-bottom-right-radius: $radbr;
+				 border-bottom-left-radius: $radbl;
+}
+
+/*
+
+What are Transitions?
+A transition is an animation that happens between changes.
+
+transition  A shorthand property for setting the four transition properties into a single property
+transition-delay  Specifies a delay (in seconds) for the transition effect
+transition-duration Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-property Specifies the name of the CSS property the transition effect is for
+transition-timing-function  Specifies the speed curve of the transition effect
+
+none  No property will get a transition effect
+all Default value. All properties will get a transition effect
+property  Defines a comma separated list of CSS property names the transition effect is for
+initial Sets this property to its default value. Read about initial
+inherit Inherits this property from its parent element. Read about inherit
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+http://www.roblaplaca.com/examples/bezierBuilder/
+
+What are Transformations?
+Transformations are a different form of animation. Instead of bridging two states on an element, a transformation physically changes the look of the element. You can transform many aspects of an element, such as:
+scaling—changing the size of the element
+rotating—spinning the element
+translating—moving the element
+
+*/
+
+// transitions
+@mixin trans($t,$e) {
+	-webkit-transition: all $t $e;
+	-moz-transition: all $t $e;
+	-ms-transition: all $t $e;
+	-o-transition: all $t $e;
+	transition: all $t $e;
+}
+
+/*
+@mixin transY($tY) {
+  -webkit-transform: translateY($tY);
+      -ms-transform: translateY($tY);
+          transform: translateY($tY);
+}
+*/

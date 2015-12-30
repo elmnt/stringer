@@ -1,0 +1,71 @@
+/* Style Guide only
+======================================== */
+
+@import "rainbow/_solarized-light";
+
+// body class
+.styleguide {
+
+  .button { margin-top: 0; }
+
+}
+
+$sg-color: darkorange;
+
+// extra margin & padding on each grid element in the style guide
+.sg__grid {
+  /*
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid $sg-color;
+  */
+}
+
+// labels in the style guide
+.sg { 
+  color: $sg-color;
+}
+
+.sg__head { 
+  //background-color: $sg-color;
+  //color: white;
+  color: $sg-color;
+  padding: 1rem 0 .5rem 0;
+  //margin: 4rem 0 1rem 0;
+  margin: 2rem 0 1rem 0;
+  //border-bottom: 1px solid $sg-color;
+  //border-bottom: 1px solid #ccc;
+}
+
+/*
+.sg__head {
+  text-transform: uppercase;
+  > span { text-transform: none; }
+}
+*/
+
+// show the difference between a 4-col split 
+// and TWO 2-col splits used together (as an alternative to 4-col)
+.show-fours .col-1-4 {
+  border: 1px solid $sg-color;
+}
+.show-twos > .col-1-2 {
+  border: 1px solid $sg-color;
+}
+
+@media all and (max-width: 1000px){
+
+  .show-twos .grid .col-1-2 {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+}
+
+@media all and (max-width: 1000px){
+
+  .pre-holder { display: none; }
+
+}

@@ -1,0 +1,168 @@
+/*
+Responsive Line Break
+<h1>
+  Responsive Line Break
+  <br class="md-show">
+  To Control Wrapping
+</h1>
+*/
+
+.display-none { display: none !important }
+.nav-button { display: none; }
+.mmenu-trigger__holder { display: none; }
+
+// control type first, then everything else
+@media all and (max-width: $break-lg){  
+  html { font-size: $base-font-size-lg; }
+}
+@media all and (max-width: $break-md){  
+  html { font-size: $base-font-size-md; }
+  .caption h1 { font-size: $rslides-caption-font-size-md; }
+}
+@media all and (max-width: $break-sm){  
+  html { font-size: $base-font-size-sm; }
+  .caption h1 { font-size: $rslides-caption-font-size-sm; }
+}
+
+@media all and (max-width: 1000px){
+  .caption h1 { font-size: $rslides-caption-font-size-lg; }
+}
+@media all and (max-width: 800px){
+  .caption h1 { font-size: $rslides-caption-font-size-md; }
+  .caption .button { display: none; }
+}
+@media all and (max-width: 600px){
+  .caption h1 { font-size: $rslides-caption-font-size-sm; }
+}
+
+/*
+Add some space to the right of the search bar (equal to the utility nav R/L padding) 
+when the viewport gets more narrow than the .wrap element's max-width
+*/
+@media all and (max-width: $wrap-max-width){
+  .container--navutility {
+    padding-right: $navutility-uniform-pad;
+  }
+}
+
+@media all and (max-width: 900px){
+
+  // ----------- portfolio display grids
+
+  .grid .four {
+    float: left; 
+    display: inline;
+    width: 49.5%;
+  }
+  .grid .counter .four:nth-child(2n+2) {  
+    margin-right: 0;
+  }
+
+  // ----------- /portfolio display grids
+
+}
+
+@media all and (max-width: 800px){
+	
+	//.nav-container { padding: 0; }
+
+  .container {
+    padding: $container-pad-tablet;
+  }
+
+  // ----------- multi-column grids
+
+  [class*='col-'] {
+    float: none; 
+    width: 100%; 
+    margin-right: 0;  
+  }
+
+  // ----------- /multi-column grids
+  	
+  // ----------- portfolio display grids
+
+  /*
+  .grid .four {
+    float: left; 
+    display: inline;
+    width: 49.5%;
+  }
+  .grid .counter .four:nth-child(2n+2) {  
+    margin-right: 0;
+  }
+  */
+
+  // ----------- /portfolio display grids
+	
+	// ----------- navigation
+
+  .mmenu-trigger__holder { 
+    display: block;
+    text-align: $mmenu-trigger-align;
+  }
+  .mmenu-trigger__holder:before,
+  .mmenu-trigger__holder:after {
+    content: " ";
+    display: table
+  }
+  .mmenu-trigger__holder:after { clear: both; }
+
+  .mmenu-trigger { 
+    //padding: $nav-mobile-button-pad;
+    //padding: 20px !important;
+    font-family: $sans;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .mmenu-trigger .fa { padding: 1.25rem; }
+
+  // hide the desktop nav elements:
+  // utility nav
+  .container--navutility { display: none; }
+  // main nav
+  // not the whole container for this one, since it holds the trigger
+  .navmain { display: none; }
+  
+  // ----------- /navigation
+
+  // ----------- misc elements
+  .panel {
+    padding: $panel-padding-tablet;
+  }
+
+}
+
+@media all and (max-width: 700px){
+}
+
+@media all and (max-width: 600px){
+
+  .container {
+    padding: $container-pad-mobile;
+  }
+
+  // hide the slideshow captions
+  .rslides_container p.caption { display: none; }
+
+	// ----------- portfolio display grids
+
+	.grid .four {
+		float: none; 
+		display: block;
+		width: 100%;
+		margin: 0 0 1% 0;
+	}
+
+	// ----------- /portfolio display grids
+
+}
+
+@media all and (max-width: 400px){
+
+  // ----------- misc elements
+  .panel {
+    padding: $panel-padding-mobile;
+  }
+
+}

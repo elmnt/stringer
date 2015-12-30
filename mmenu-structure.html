@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head></head>
+<body>
+
+<!-- open page - page:header(trigger)/content/menu -->
+<div id="page">
+
+<header class="header">
+  <div class="nav-trigger"><a class="mmenu-trigger" href="#menu">Menu</a></div>
+</header>
+
+<!-- open content - page:header(trigger)/content/menu -->
+<div class="content"></div><!-- /.content -->
+
+<!-- the menu - page:header(trigger)/content/menu -->
+<nav id="menu"></nav>
+
+<footer></footer>
+
+<!-- all site scripts -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- more -->
+
+<!-- add the mmenu scripts -->
+<script type="text/javascript" src="/assets/js/mmenu/jquery.mmenu.min.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#menu").mmenu({
+     "offCanvas": {
+        "position": "right"
+     }
+  });
+});
+</script>
+
+<!-- close page - page:header(trigger)/content/menu -->
+</div><!-- /#page -->
+
+</body>
+</html>

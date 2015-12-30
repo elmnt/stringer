@@ -1,0 +1,124 @@
+// ---------------------- Main Nav
+
+// the nav element
+.navmain {}
+
+// the top-level ul
+.navmain__links,
+.navmain__links ul { // and any child ul 
+	list-style-type: none; 
+	margin: 0;
+	padding: 0;
+}
+
+.navmain__links li {
+	display: inline-block; 
+	// float: left; // the float keeps them flush
+}
+.navmain__links a {
+	display: block; 
+	background-color: $navmain-bg; 
+	color: $navmain-color; 
+	padding: $navmain-button-pad; 
+	text-decoration: none; 
+	white-space: nowrap;
+	font-size: $navmain-global-font-size;
+	line-height: $nav-global-line-height;
+	text-transform: $navmain-text-transform;
+
+	&:hover,
+	&:active {
+		background-color: $navmain-bg-hover;
+		color: $navmain-color-hover; 
+	}
+
+}
+
+// ----------- the sub-menus
+
+.navmain__links li {
+	position: relative;
+}
+
+.navmain__links li ul {
+	display: none;  
+	position: absolute;
+	top: 100%;
+	left: 0px; 
+}
+
+.navmain__links li ul li {
+	// float: left; 
+	width: auto;  
+	border-top: 1px solid $navmain-color; 
+	text-align: left; 
+}
+
+// no top margin on the first menu item of the sub-subs 
+.navmain__links li ul li:first-child, 
+.navmain__links li ul li ul li:first-child {
+	border-top: none; 
+}
+
+.navmain__links li ul a {}
+
+.navmain__links li ul ul {
+	top: 0;
+	left: 100%;
+}
+
+.navmain__links li:hover > ul {
+	display: block; 
+}
+
+/*
+Keep all sub-menu items consistent (and variable width), 
+so they'll assume the width of the widest link. 
+This requires responsible content management (don't write long links)
+*/
+.navmain__links,
+.navmain__links ul { width: auto; }
+
+.navmain__links li ul li,
+.navmain__links li ul li ul li { 
+	width: 100%;
+}
+
+/*
+We only go two levels deep. That's enough for a menu system. 
+I think any more is overkill, and sloppy UI. 
+Put the sub-page links in the appropriate section. 
+Give the second-level menus a left border
+*/
+
+.navmain__links li ul li ul { 
+	margin-left: 0px; 
+}
+
+// ----------- /the sub-menus
+
+// ----------- the mobile nav trigger
+
+.mmenu-trigger__holder {
+	display: none;
+}
+
+/* set up these styles in _responsive.scss
+
+.mmenu-trigger__holder {
+	padding: $navmain-mobile-button-pad;
+	background-color: $navmain-bg;
+	color: $navmain-color;
+	cursor: pointer; 
+	@extend .cf;
+
+	&:hover { 
+		background-color: $navmain-bg-hover; 
+		color: $navmain-color-hover; 
+	}
+
+}
+
+*/
+
+// ----------- /the mobile nav trigger

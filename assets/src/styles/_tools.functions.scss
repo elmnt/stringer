@@ -1,0 +1,23 @@
+/* Functions
+======================================== */
+
+// Color
+
+/* 
+tint and shade functions are not the same as darken / lighten
+color: lighten($color, 20%);
+*/
+
+/*
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+// Usage: color: shade(#999, 20);
+*/

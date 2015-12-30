@@ -1,0 +1,303 @@
+/* Customizations
+------------------------------------------------------- */
+
+// ----------- New Stuff & Code that needs to be added to the kit
+
+/*
+.center-content-holder {
+  width: 100%;
+  display: block;
+  text-align: center;
+}  
+.center-content {
+  margin: 0 auto !important;
+}
+*/
+
+// ----------- nesting use-case for &:not
+/*
+.skizziks {
+  &:not(:last-child) {
+    border-left: 10px solid #ccc;
+  }
+}
+*/
+
+// ----------- /New Stuff & Code that needs to be added to the kit
+
+
+/* Tools
+======================================== */
+// tools.mixins
+// tools.functions
+
+/* Generic
+======================================== */
+// generic.normalize
+// generic.box-sizing
+
+/* Base
+======================================== */
+
+// base
+
+// custom .cmbox for a "welcome" message on the home page
+
+.cmbox--welcome {
+  @extend .cmbox;
+  background-color: $site-color-4;
+  padding: 6rem;
+}
+
+// a simple h1 text title
+.cmbox__title {
+  margin: 0;
+  padding: 0;
+  font-size: $cmbox-default-title;
+  line-height: 1em;
+}
+
+.cmbox__title--welcome {
+  margin: 0;
+  padding: 0;
+  //font-size: 2rem;
+  font-weight: $fw-normal;
+  //line-height: 1.25em;
+  letter-spacing: -1px;
+  color: #555;
+}
+
+.cmbox__subtitle--welcome {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  //font-size: 1rem;
+  font-weight: $fw-normal;
+  //line-height: 1.25em;
+  letter-spacing: -1px;
+  color: #555;
+}
+
+// base.page
+// base.images
+// base.links
+// base.type
+
+/* Modules
+======================================== */
+// modules.accordions 
+// modules.alerts 
+// modules.bg-slideshow // full-page background image slideshow
+// modules.breadcrumbs
+// modules.buttons
+// modules.form-hack
+// modules.tables
+// modules.headroom // styles for the headroom.js plugin
+// modules.layout // the grid & overall site structure
+// modules.nav-global
+// modules.nav-utility
+// modules.nav-main
+// modules.nav-mobile
+// modules.responsiveslides // basic, responsive slideshow
+// modules.panel
+
+/* Modules: Part 2 (complex add-ons)
+======================================== */
+/* 
+Mobile Nav - mmenu nav
+http://mmenu.frebsite.nl
+======================================== */
+// mmenu/mmenu-demo
+// mmenu/jquery.mmenu.all
+
+/* Vendor
+======================================== */
+// vendor.plugin
+
+/* Custom
+======================================== */
+
+/* Trumps
+======================================== */
+// trumps
+
+/* Media
+======================================== */
+// responsive
+// media.print
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- /Code that needs to be added to the kit */
+
+
+/* ---------------------- header */
+
+/* 
+Force the z-index on the header content, 
+so the menus are always on top.
+(   This should be placed in _trump.zindex.scss )
+*/
+.header, 
+.header * { 
+  z-index: 999 !important; 
+}
+
+.header {
+  //margin-bottom: 2rem;
+}
+
+.logo--header {}
+
+/* ----------- navutility */
+
+.navutility {} /* the nav element */
+
+.navutility__links {} // the ul
+  .navutility__links li {}
+  .navutility__links a {}
+
+.navutility__social {} // the ul
+  .navutility__social li {}
+  .navutility__social a {}
+
+.navutility__search {
+  width: 200px;
+}
+.navutility__search form {
+  width: 100%;
+}
+.navutility__input {
+  // width: 70% !important;
+  height: auto !important;
+}
+/*
+.navutility__button {
+  width: 30%;
+}
+*/
+
+/* additional final styles to foce equal height */
+.navutility__input {
+  vertical-align: top;
+  display:inline-block; 
+  //height:33px;
+}
+.navutility__button {
+  display:inline-block;
+  //height:33px;
+}
+
+/* ----------- /navutility */
+
+/* ----------- navmain */
+
+.navmain {}
+
+.navmain__links {} /* the ul */
+.navmain__links li {}
+.navmain__links a {}
+
+/* ----------- /navmain */
+
+/* ----------- the mobile nav trigger */
+
+/*
+.mmenu-trigger { 
+  padding: $nav-mobile-button-pad;
+  font-family: $sans;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+*/
+
+// force the text and the icon to be uniform size
+/*
+.mmenu-trigger,
+.mmenu-trigger .fa {
+  font-size: 1.25rem !important;
+  line-height: 1em !important;
+  vertical-align: top !important;
+}
+*/
+
+/* ----------- /the mobile nav trigger */
+
+// toggle show-hide login-buttons under the utility nav
+
+.loginbuttons__holder { display: none; }
+
+/* ---------------------- /header */
+
+form label {
+  font-family: $sans !important;
+}
+
+// ----------- Footer
+
+$footer-background-color: #666;
+
+.footer {}
+
+.container--footer {
+  background-color: $footer-background-color;
+  color: white;
+}
+
+// ----------- Basic BEM style
+
+/*
+
+.person {}
+
+.person__hand {}
+.person__hand--left {}
+.person__hand--right {}
+
+.person__leg {}
+.person__leg--left {}
+.person__leg--right {}
+
+.person--female {}
+.person--female__hand {}
+.person--female__hand--left {}
+.person--female__hand--right {}
+
+*/
+
+// ----------- a BEM use-case example
+
+/*
+.contact-form {
+  
+  &__input {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #333333;
+    color: #000000;
+    
+    &--large {
+       padding: 30px 20px;
+    }
+  }
+  
+  &__submit {
+    display: inline-block;
+    background: #ff0000;
+    color: #ffffff;
+  }
+}
+*/

@@ -1,0 +1,75 @@
+/* Modules - Buttons
+------------------------------------------------------- */
+
+// ----------- base button
+
+button,
+.button {
+  display: inline-block; 
+  color: $button-color; 
+  background-color: $button-background-color;
+  text-decoration: none; 
+  text-transform: $button-text-transform; 
+  text-align: center; 
+  font-family: $sans; 
+  font-weight: $button-font-weight-default; 
+  font-weight: $button-font-weight; 
+  font-size: $button-font-size; 
+  letter-spacing: $button-letter-spacing;
+  line-height: 1em; 
+  cursor: pointer; 
+  padding: $button-padding;
+  margin: $button-margin;
+  -webkit-font-smoothing: antialiased;
+  border: none !important;
+    &:visited {
+      color: $button-color;
+      background-color: $button-background-color;
+    }
+    &:hover,
+    &:focus {
+      color: $button-color;
+      background-color: lighten($button-background-color, 25%);
+    }
+    &:active {
+      color: $button-color;
+      background-color: lighten($button-background-color, 25%);
+    }
+}
+
+// ----------- alternate color buttons
+
+.button--altone {
+  background-color: $button-color-altone;
+    &:visited {
+      background-color: $button-color-altone;
+    }
+    &:hover,
+    &:focus {
+      background-color: lighten($button-color-altone, 25%);
+    }
+    &:active {
+      background-color: lighten($button-color-altone, 25%);
+    }
+}
+
+.button--alttwo {
+  background-color: $button-color-alttwo;
+    &:visited {
+      background-color: $button-color-alttwo;
+    }
+    &:hover,
+    &:focus {
+      background-color: lighten($button-color-alttwo, 25%);
+    }
+    &:active {
+      background-color: lighten($button-color-alttwo, 25%);
+    }
+}
+
+// ----------- big button
+
+.button--big { 
+  padding: $button-big-padding;
+  font-size: $button-big-font-size;
+}

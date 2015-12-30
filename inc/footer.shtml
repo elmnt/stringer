@@ -1,0 +1,46 @@
+<nav id="menu">
+
+  <ul class="list-reset cf">
+
+<!--#include virtual="/inc/nav/navmain-links.shtml" -->
+
+  <div class="mobile__navutility__links">
+<!--#include virtual="/inc/nav/navutility-links.shtml" -->
+  </div>
+
+  <div class="mobile__navutility__social">
+<!--#include virtual="/inc/nav/navutility-social.shtml" -->
+  </div>
+
+  <div class="mobile__navutility__search">
+<!--#include virtual="/inc/nav/navutility-search.shtml" -->
+  </div>
+
+  </ul>
+
+</nav><!-- /#menu -->
+
+<!-- the footer needs more styling -->
+
+<footer class="footer">
+  <div class="container--footer">
+  <div class="wrap pad">
+    
+    <div class="grid" style="text-align:center;">
+      <div class="single-col" style="text-align:center;">
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      	<p>This is the footer.</p>
+        <p><a href="#top" class="scrollanchor button">Return to Top</a></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+</footer>
+
+</div><!-- /#page -->
+
+<script src="/assets/js/main.min.js"></script>
