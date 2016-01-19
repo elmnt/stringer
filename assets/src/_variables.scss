@@ -108,8 +108,8 @@ $figcaption-background-color: $site-color-1;
 // ----------- base.links.scss
 
 $link-text-decoration: underline;
-$link-color: blue;
-$link-color-visited: purple;
+$link-color: DarkSeaGreen;
+$link-color-visited: DarkSeaGreen;
 $link-text-decoration-hover: none;
 $link-color-hover: #999;
 
@@ -118,7 +118,7 @@ $link-color-hover: #999;
 //$base-font-size:; // set on top, so it's more global
 $base-font-family: $sans;
 $base-line-height: 1.5em;
-$base-text-color: $site-color-1;
+$base-text-color: $site-color-2 ;
 $p-margin: 0 0 1rem 0; 
 $p-padding: 0;
 

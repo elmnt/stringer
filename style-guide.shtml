@@ -1041,14 +1041,14 @@
 
   <div class="grid">
 
-    <p class="sg">By default, images appear in their native size (no special class) and will respond down on smaller screens, once the container is smaller than the image.</p>
+    <p class="sg">By default, (regular, non-picturefill-enabled) images appear at their native size. They re-size relative to their container on smaller screens.</p>
     <div class="grid" style="border:1px solid indianred;padding:10px;">
       <img src="/assets/img/surf-sm.jpg">
     </div>
   
     <p>&nbsp;</p>
 
-    <p class="sg">Images with class="fit" will ALWAYS fill the container, no matter their native size.</p>
+    <p class="sg">Images with class="fit" will always fill the container, no matter their native size.</p>
     <div class="grid" style="border:1px solid indianred;padding:10px;">
       <img src="/assets/img/surf-sm.jpg" class="fit">
     </div>

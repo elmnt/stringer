@@ -1,7 +1,7 @@
 /* Style Guide only
 ======================================== */
 
-@import "rainbow/_solarized-light";
+@import "rainbow/_solarized-dark";
 
 // body class
 .styleguide {
@@ -10,7 +10,7 @@
 
 }
 
-$sg-color: darkorange;
+$sg-color: lightslategrey;
 
 // extra margin & padding on each grid element in the style guide
 .sg__grid {
