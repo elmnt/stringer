@@ -229,6 +229,7 @@ $fh-allow-vendor-styling: true;
 // ----------- form-hack fieldsets & legends
 
 $fh-fieldset-bare: false;
+$fh-background-color: #f6f6f6;
 
 // ----------- form-hack buttons & input submits
 
@@ -404,20 +405,20 @@ $rslides-caption-font-size-sm: 1.5rem;
 
 // ----------- styles/modules.panel
 
-$panel-background-color: $site-color-3;
+$panel-background-color: $site-color-4;
 $panel-max-width: 600px;
 $panel-padding: 4rem;
 $panel-padding-tablet: 2rem;
 $panel-padding-mobile: 1rem;
-$panel-border: 5px solid $site-color-3;
+$panel-border: 5px solid $site-color-4;
 $panel-border-radius: $base-border-radius;
 $panel-title-color: white;
 $panel-copy-color: $base-text-color;
 
 // ----------- panels for form holder
 
-$panel-form-border: 5px solid $site-color-3;
-$panel-form-background-color: $site-color-3;
+$panel-form-border: 5px solid $site-color-4;
+$panel-form-background-color: $site-color-4;
 $panel-form-padding: 2rem;
 
 // ----------- styles/modules.accordion

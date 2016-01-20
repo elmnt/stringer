@@ -934,13 +934,13 @@
     <div class="col-1-2">
       <div class="panel--form">
 
-      <form>
+      <form name="myForm" id="myForm">
 
-        <label>Input Label</label>
-        <input type="text" placeholder="Placeholder" />
+        <label for="thing">Input Label</label>
+        <input type="text" name="thing" id="thing" placeholder="Placeholder">
 
-        <label>Input Label</label>
-        <input type="text" placeholder="Placeholder" />
+        <label for="thing">Input Label</label>
+        <input type="email" name="thing" id="thing" placeholder="Placeholder">
 
         <label>Select Box</label>
         <select>
@@ -980,13 +980,13 @@
     <div class="col-1-2">
       <div class="panel--form">
 
-      <form>
+      <form name="myForm" id="myForm">
 
-        <label>Input Label</label>
-        <input type="text" placeholder="Placeholder" />
+        <label for="thing">Input Label</label>
+        <input type="text" name="thing" id="thing" placeholder="Placeholder">
 
-        <label>Input Label</label>
-        <input type="text" placeholder="Placeholder" />
+        <label for="thing">Input Label</label>
+        <input type="email" name="thing" id="thing" placeholder="Placeholder">
 
         <label>Select Box</label>
         <select>
