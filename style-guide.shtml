@@ -179,6 +179,7 @@
 <div class="wrap">
 
   <h3 class="sg__head">center-aligned, middle-aligned box</h3>
+  <p class="sg">Fluid vertical alignment with no height settings.</p>
   <div class="cmbox">
     <div class="cmbox__content">
       <h1 class="cmbox__title">Jackdaws Love My Sphinx of Quartz</h1>
