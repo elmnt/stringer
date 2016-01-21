@@ -25,8 +25,21 @@
 <div class="container">
 <div class="wrap">
 
-  <div class="grid mt4 mb4">
+<div class="cmbox--sgintro">
+  <div class="cmbox__content">
+    <img src="/assets/img/stringer.svg">
     <h1 class="sg">stringer</h1>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+<div class="wrap">
+
+  <div class="grid mt4 mb4">
+    <!-- <h1 class="sg">stringer</h1> -->
     <div class="col-1-2">
       <p><strong>Stringer</strong> is a robust, responsive framework with plenty of optional building blocks. It's not a feature-complete boilerplate, but a good starting point upon which you can develop custom themes.</p>
       <p style="font-size:80%;"><strong>Please note:</strong> this project is a sandbox. It changes often. It might have a bug or two, from time-to-time. I try to push only bug-free versions, but I make no promises, and I offer no support of any kind. It's yours to use as you wish.</p>
@@ -37,6 +50,7 @@
         <li>See the <a href="https://github.com/elmnt/stringer">repo</a> for more info</li>     
         <li>I use <a href="https://incident57.com/codekit/">Codekit</a> to manage this project. My config file is in the repo, if you're a Codekit user.</li>
         <li>I'm using the (very customizable) jQuery <a href="http://mmenu.frebsite.nl">mmenu</a> system for mobile navigation.</li>
+        <li>Stringer uses an <a href="http://www.computerhope.com/jargon/s/shtml.htm" target="_blank">SHTML</a> file structure for SSI (server side includes), as per the practice at my agency. With very little effort, you can adapt it to use PHP, for instance.</li>
         <li><strong>My build theory:</strong> Core SASS partials lay the groundwork, with one _theme.scss file with lots of <a href="http://getbem.com">BEM</a> styles to build up your design (so the core framework remains unchanged). You can follow this path, or get into the partials and customize them to your heart's content.</li>
       </ul>
     </div>

@@ -23,6 +23,20 @@
 }
 */
 
+// the stringer logo holder
+.cmbox--sgintro {
+  @extend .cmbox;
+  background-color: white;
+  padding: 4rem 0 0 0;
+}
+
+// the stringer logo
+.cmbox--sgintro img {
+  display: inline-block;
+  width: 90%;
+  max-width: 400px;
+}
+
 // ----------- /New Stuff & Code that needs to be added to the kit
 
 
