@@ -28,7 +28,7 @@
   <div class="grid mt4 mb4">
     <h1 class="sg">stringer</h1>
     <div class="col-1-2">
-      <p><strong>Stringer</strong> is a robust, responsive starter kit with plenty of optional building blocks. It's not a feature-complete boilerplate. It's meant to be a framework upon which you can create your own custom theme.</p>
+      <p><strong>Stringer</strong> is a robust, responsive framework with plenty of optional building blocks. It's not a feature-complete boilerplate, but a good starting point upon which you can develop custom themes.</p>
       <p style="font-size:80%;"><strong>Please note:</strong> this project is a sandbox. It changes often. It might have a bug or two, from time-to-time. I try to push only bug-free versions, but I make no promises, and I offer no support of any kind. It's yours to use as you wish.</p>
       <p style="font-size:80%;">A <strong>stringer</strong> is a wooden strip that runs the length of a surfboard, designed to give the board strength &amp; rigidity.</p>
     </div>
