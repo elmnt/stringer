@@ -24,7 +24,7 @@ function redirect(){
 
 <body onload="redirect()">
 
-<p><a href="style-guide.shtml">shizzle</a></p>
+<p><a href="style-guide.shtml">redirect</a></p>
 
 </body>
 </html>
