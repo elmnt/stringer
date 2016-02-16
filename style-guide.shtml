@@ -76,10 +76,10 @@
 <div class="container--full">
 
   <picture class="fit">
-    <source srcset="/assets/img/surf-xl.jpg" media="(min-width: 1600px)">
-    <source srcset="/assets/img/surf-lg.jpg" media="(min-width: 800px)">
-    <source srcset="/assets/img/surf-md.jpg" media="(min-width: 400px)">
-    <source srcset="/assets/img/surf-sm.jpg" media="(min-width: 100px)">
+    <source srcset="/assets/img/surf-xl.jpg" media="(min-width: 2000px)">
+    <source srcset="/assets/img/surf-lg.jpg" media="(min-width: 1200px)">
+    <source srcset="/assets/img/surf-md.jpg" media="(min-width: 800px)">
+    <source srcset="/assets/img/surf-sm.jpg" media="(min-width: 300px)">
     <img srcset="/assets/img/surf-sm.jpg" alt="<?php echo $picalt; ?>">
   </picture>
 
@@ -91,10 +91,10 @@
   <pre style="margin-top:10px;">
   <code data-language="html">
     <picture class="fit">
-      <source srcset="/assets/img/surf-xl.jpg" media="(min-width: 1600px)">
-      <source srcset="/assets/img/surf-lg.jpg" media="(min-width: 800px)">
-      <source srcset="/assets/img/surf-md.jpg" media="(min-width: 400px)">
-      <source srcset="/assets/img/surf-sm.jpg" media="(min-width: 100px)">
+      <source srcset="/assets/img/surf-xl.jpg" media="(min-width: 2000px)">
+      <source srcset="/assets/img/surf-lg.jpg" media="(min-width: 1200px)">
+      <source srcset="/assets/img/surf-md.jpg" media="(min-width: 800px)">
+      <source srcset="/assets/img/surf-sm.jpg" media="(min-width: 300px)">
       <img srcset="/assets/img/surf-sm.jpg" alt="alt">
     </picture>
   </code>
@@ -116,12 +116,11 @@
 
 
 <!-- ==================================== slider -->
-<!-- (add picturefill responsive images to the slider to optimize) -->
 
 <div class="container">
   <div class="wrap">
 
-    <h3 class="sg__head">Responsive slider with vertically middle-aligned captions &amp; call-to-action</h3>
+    <h3 class="sg__head">Responsive slider with vertically middle-aligned captions &amp; call-to-action (with picturefill)</h3>
 
   </div>
 </div>
@@ -130,38 +129,14 @@
 
   <div class="rslides_container cf">
     <ul class="rslides" id="slider">
+
       <li>
-        <img src="/assets/img/_slideshow/01.jpg" alt="">
-        <div class="caption">
-        <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
-          <a href="#!" class="button">Call to Action</a>
-        </div>
-        </div>
-      </li> 
-      <li>
-        <img src="/assets/img/_slideshow/02.jpg" alt="">
-        <div class="caption">
-        <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
-          <a href="#!" class="button">Call to Action</a>
-        </div>
-        </div>
-      </li> 
-      <li>
-        <img src="/assets/img/_slideshow/03.jpg" alt="">
-        <div class="caption">
-        <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
-          <a href="#!" class="button">Call to Action</a>
-        </div>
-        </div>
-      </li> 
-      <li>
-        <img src="/assets/img/_slideshow/04.jpg" alt="">
+        <picture class="fit">
+          <source srcset="/assets/img/_slideshow/surf-01-lg.jpg" media="(min-width: 1800px)">
+          <source srcset="/assets/img/_slideshow/surf-01-md.jpg" media="(min-width: 1000px)">
+          <source srcset="/assets/img/_slideshow/surf-01-sm.jpg" media="(min-width: 400px)">
+          <img srcset="/assets/img/_slideshow/surf-01-sm.jpg" alt="<?php echo $picalt; ?>">
+        </picture>
         <div class="caption">
         <div class="caption-contents">
           <h1>Jackdaws Love Sphinx of Quartz</h1>
@@ -170,6 +145,39 @@
         </div>
         </div>
       </li>
+
+      <li>
+        <picture class="fit">
+          <source srcset="/assets/img/_slideshow/surf-02-lg.jpg" media="(min-width: 1800px)">
+          <source srcset="/assets/img/_slideshow/surf-02-md.jpg" media="(min-width: 1000px)">
+          <source srcset="/assets/img/_slideshow/surf-02-sm.jpg" media="(min-width: 400px)">
+          <img srcset="/assets/img/_slideshow/surf-02-sm.jpg" alt="<?php echo $picalt; ?>">
+        </picture>
+        <div class="caption">
+        <div class="caption-contents">
+          <h1>Jackdaws Love Sphinx of Quartz</h1>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
+          <a href="#!" class="button">Call to Action</a>
+        </div>
+        </div>
+      </li>
+
+      <li>
+        <picture class="fit">
+          <source srcset="/assets/img/_slideshow/surf-03-lg.jpg" media="(min-width: 1800px)">
+          <source srcset="/assets/img/_slideshow/surf-03-md.jpg" media="(min-width: 1000px)">
+          <source srcset="/assets/img/_slideshow/surf-03-sm.jpg" media="(min-width: 400px)">
+          <img srcset="/assets/img/_slideshow/surf-03-sm.jpg" alt="<?php echo $picalt; ?>">
+        </picture>
+        <div class="caption">
+        <div class="caption-contents">
+          <h1>Jackdaws Love Sphinx of Quartz</h1>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
+          <a href="#!" class="button">Call to Action</a>
+        </div>
+        </div>
+      </li>
+
     </ul>
   </div>
 

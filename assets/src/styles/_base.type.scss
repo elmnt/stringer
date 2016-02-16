@@ -1,5 +1,6 @@
-/* Base - Type
-======================================== */
+/**
+ * Base - Type
+ */
 
 html {
   font-size: $base-font-size-lg;
@@ -98,16 +99,13 @@ hr {
 
 strong { 
   font-weight: bold; 
-  font-weight: 700;
+  font-weight: $fw-semibold;
 }
 
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
 }
-
-// for labels in the starter kit
-.sk-label { color: red; }
 
 .bold { font-weight: bold; }
 .regular { font-weight: normal; }

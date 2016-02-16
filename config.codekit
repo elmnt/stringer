@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19115",
 "files": {
 	"\/add-code.shtml": {
 		"fileType": 8192,
@@ -29,90 +29,101 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/_slideshow\/01.jpg": {
+	"\/assets\/img\/_slideshow\/surf-01-lg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 247161,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/01.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/01.jpg",
+		"initialSize": 632786,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-lg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-lg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/02.jpg": {
+	"\/assets\/img\/_slideshow\/surf-01-md.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 360528,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/02.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/02.jpg",
+		"initialSize": 207369,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-md.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-md.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/03.jpg": {
+	"\/assets\/img\/_slideshow\/surf-01-sm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 266945,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/03.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/03.jpg",
+		"initialSize": 61908,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-01-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/04.jpg": {
+	"\/assets\/img\/_slideshow\/surf-02-lg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 160007,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/04.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/04.jpg",
+		"initialSize": 816754,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-lg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-lg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/beach-01.jpg": {
+	"\/assets\/img\/_slideshow\/surf-02-md.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 257244,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-01.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-01.jpg",
+		"initialSize": 281551,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-md.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-md.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/beach-02.jpg": {
+	"\/assets\/img\/_slideshow\/surf-02-sm.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 212262,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-02.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-02.jpg",
+		"initialSize": 76587,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-02-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/beach-03.jpg": {
+	"\/assets\/img\/_slideshow\/surf-03-lg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 195036,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-03.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-03.jpg",
+		"initialSize": 861892,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-lg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-lg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/_slideshow\/beach-04.jpg": {
+	"\/assets\/img\/_slideshow\/surf-03-md.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 274948,
-		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-04.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/beach-04.jpg",
+		"initialSize": 291646,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-md.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-md.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/_slideshow\/surf-03-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80691,
+		"inputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/_slideshow\/surf-03-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -161,17 +172,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/surf_orig.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8.73804e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/surf_orig.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/surf_orig.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -215,6 +215,22 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/src\/_code-to-dos.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/_code-to-dos.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_code-to-dos.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		},
 	"\/assets\/src\/_responsive.scss": {
 		"createSourceMap": 1,
@@ -1365,22 +1381,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/assets\/src\/styles\/_base.scss": {
-		"createSourceMap": 1,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/src\/styles\/_base.scss",
-		"outputAbbreviatedPath": "\/assets\/css\/_base.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/assets\/src\/styles\/_base.type.corpus.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
@@ -1406,6 +1406,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/src\/styles\/_base.type.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_base.type.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/src\/styles\/_base.utility.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/styles\/_base.utility.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_base.utility.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -1518,6 +1534,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/src\/styles\/_modules.alerts.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_modules.alerts.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/src\/styles\/_modules.animate.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/styles\/_modules.animate.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_modules.animate.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -1774,6 +1806,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/src\/styles\/_trumps.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_trumps.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/src\/styles\/_z-index.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/styles\/_z-index.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/_z-index.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,

@@ -1,16 +1,16 @@
-/* Base - Images
-======================================== */
+/**
+ * Base - Images
+ */
 
-/* 
-normal image sizing 
-(only responsive when the holder gets smaller than the img)
-*/
+// normal image sizing 
+// (only responsive when the holder gets smaller than the img)
 img {
   max-width: 100%;
   vertical-align: $img-vertical-align; 
   display: block; 
 }
 
+// responsive img
 img.fit,
 .fit img {
   width: 100%;

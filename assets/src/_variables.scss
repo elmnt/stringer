@@ -1,3 +1,6 @@
+/**
+ * Some basic, global stuff 
+ */
 
 // ----------- start with the global font size
 
@@ -5,35 +8,26 @@ $base-font-size-lg: 20px;
 $base-font-size-md: 18px;
 $base-font-size-sm: 16px;
 
-// ----------- reset these with each of the three base media queries
+// ----------- reset these with each of the three base media queries (desktop/tablet/phone)
 
 $base-font-size: $base-font-size-lg;
 $base-spacing: $base-font-size;
-
-// ----------- variables specifically for our mixins
-
-$global-trans-time: .5s;
-$global-easing: ease-out;
 
 // ----------- global border radius (optional)
 
 $base-border-radius: 5px;
 
-// ----------- responsive breakpoints (placed here for more global use)
+// ----------- some basic responsive breakpoints (placed here for more global use)
 
 $break-lg: 1600px;
 $break-md: 800px;
 $break-sm: 400px;
 
-/* Color Variables
-======================================== */
+/**
+ * Color Variables
+ */
 
-// ----------- the primary brand color(s)
-
-/*
-I've used a very generic color scheme as a starting point.
-Add your color variables here to get started on your theme.
-*/
+// ----------- primary brand color(s)
 
 $brand-color-0: #000;
 
@@ -47,24 +41,30 @@ $site-color-4: #ccc;
 //$site-color-error: red;
 //$site-color-success: green;
 
-/* Tools
-======================================== */
+/**
+ * Tools
+ */
+
 // styles/tools.mixins
+
+// transitions
+$global-trans-property: all;
+$global-trans-duration: .5s;
+$global-trans-timing-function: ease-out;
+$global-trans-delay: 0;
+
 // styles/tools.functions
 
-/* Generic
-======================================== */
+/**
+ * Generic
+ */
+
 // styles/generic.normalize
 // styles/generic.box-sizing
 
-/* Base
-======================================== */
-
-// Typekit info
-/*
-body: ff-tisa-web-pro 400 / 400  italic
-heads: futura-pt 400 / 500 / 500 italic
-*/
+/**
+ * Base
+ */
 
 // Google Fonts
 /*
@@ -115,7 +115,7 @@ $link-color-hover: #999;
 
 // ----------- base.type.scss
 
-//$base-font-size:; // set on top, so it's more global
+//$base-font-size:; // see the top of this doc
 $base-font-family: $sans;
 $base-line-height: 1.5em;
 $base-text-color: $site-color-2 ;
@@ -165,12 +165,14 @@ $hr-margin-bottom: $base-font-size - 1px;
 $hr-border: none;
 $hr-border-bottom: 1px solid $site-color-3;
 
-/* Modules
-======================================== */
+/**
+ * Modules
+ */
+
 // styles/modules.accordions 
 // styles/modules.alerts 
 // styles/modules.bg-slideshow.scss // full-page background image slideshow
-// styles/_modules.breadcrumbs
+// styles/modules.breadcrumbs
 // styles/modules.buttons
 
 // ----------- buttons
@@ -195,8 +197,9 @@ $button-big-font-size: 1rem;
 $button-color-altone: $site-color-1;
 $button-color-alttwo: $site-color-2;
 
-/* Modules: styles/modules.form-hack
-======================================== */
+/**
+ * Modules: styles/modules.form-hack
+ */
 
 // ----------- form-hack font
 
@@ -423,12 +426,21 @@ $panel-form-padding: 2rem;
 
 // ----------- styles/modules.accordion
 
-/* Modules: Part 2 (complex add-ons)
-======================================== */
+// ----------- styles/modules.animate
+
+$base-animation-duration: 1s;
+$hinge-animation-duration: 2s;
+$flip-bounce-animation-duration: .75s;
+
+/**
+ * Modules: Part 2 (complex add-ons)
+ */
+
 /* 
 Mobile Nav - mmenu nav
 http://mmenu.frebsite.nl
-======================================== */
+*/
+
 // mmenu/mmenu-demo
 // mmenu/jquery.mmenu.all
 
@@ -436,8 +448,9 @@ http://mmenu.frebsite.nl
 
 $mmenu-trigger-align: right;
 
-/* my custom mmenu styles
-======================================== */
+/**
+ * My custom mmenu styles
+ */
 
 $mmm-menu-background-color: $site-color-2 !important;
 
@@ -499,20 +512,27 @@ $mmm-navutility-input-background-hover: #eee;
 
 $mmm-subclose-text-transform: uppercase;
 
-/* Vendor
-======================================== */
+/**
+ * Vendor
+ */
+
 // styles/vendor.plugin
 /*
 Now we apply the custom design on top of this SASS kit.
 Remember to @extend classes, @include mixins, and use BEM styling where appropriate.
 */
-// custom
 
-/* Trumps
-======================================== */
+// Custom
+
+/**
+ * Trumps
+ */
+
 // styles/trumps
 
-/* Media
-======================================== */
+/**
+ * Media
+ */
+ 
 // responsive
 // styles/media.print

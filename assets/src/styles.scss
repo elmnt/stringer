@@ -1,33 +1,20 @@
-
-/* TO-DOs
---------------------------------------------
-- https://github.com/clintonhalpin/common-tests/blob/master/README.md
-- a better footer
-
-background: #d2b48c; // old browsers
-background: -webkit-linear-gradient(#d2b48c,#ffd700); // Chrome 10-25, Safari 5.1-6
-background: linear-gradient(#d2b48c,#ffd700); // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-
-https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
-
-*/
-
 @import "variables";
 
 // ----------- Tools
 
 @import "styles/tools.mixins";
-@import "styles/tools.functions";
+//@import "styles/tools.functions";
 
 // ----------- Generic
 
+// use either normalize or reset, depending on your preference:
 //@import "styles/generic.normalize";
 @import "styles/generic.reset";
 @import "styles/generic.box-sizing";
 
 // ----------- Base
 
-@import "styles/base";
+@import "styles/base.utility";
 @import "styles/base.page";
 @import "styles/base.images";
 @import "styles/base.links";
@@ -45,6 +32,7 @@ https://www.marcozehe.de/2015/12/14/the-web-accessibility-basics/
 @import "styles/modules.responsiveslides"; //responsive slideshow
 @import "styles/modules.panel";
 @import "styles/modules.accordion";
+@import "styles/modules.animate"; // animate.css
 
 // ----------- Modules (inactive)
 /* 
@@ -71,6 +59,10 @@ source: http://mmenu.frebsite.nl
 // ----------- Our design
 
 @import "theme";
+
+// ----------- z-index Settings
+
+@import "styles/z-index";
 
 // ----------- Trumps
 

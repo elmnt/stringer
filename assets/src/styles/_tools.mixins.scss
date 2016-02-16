@@ -1,33 +1,6 @@
 /* Mixins
 ======================================== */
 
-// Marc Jenkins breakpoint mixin
-// https://github.com/marcjenkins
-/*
-@mixin breakpoint($size) {
-  @if $size == lg {
-    @media screen and (max-width: $break-lg) {
-      @content;
-    } 
-  }
-  @if $size == md {
-    @media screen and (max-width: $break-md) {
-      @content;
-    } 
-  }
-  @if $size == sm {
-    @media screen and (max-width: $break-sm) {
-      @content;
-    } 
-  }
-  @if $size == xs {
-    @media screen and (max-width: $break-xs) {
-      @content;
-    } 
-  }  
-}
-*/
-
 // border-box
 @mixin bbox {
 	-moz-box-sizing: border-box;
@@ -72,21 +45,14 @@
 }
 
 /*
-
 What are Transitions?
 A transition is an animation that happens between changes.
 
-transition  A shorthand property for setting the four transition properties into a single property
-transition-delay  Specifies a delay (in seconds) for the transition effect
-transition-duration Specifies how many seconds or milliseconds a transition effect takes to complete
-transition-property Specifies the name of the CSS property the transition effect is for
-transition-timing-function  Specifies the speed curve of the transition effect
-
-none  No property will get a transition effect
-all Default value. All properties will get a transition effect
-property  Defines a comma separated list of CSS property names the transition effect is for
-initial Sets this property to its default value. Read about initial
-inherit Inherits this property from its parent element. Read about inherit
+transition: (shorthand)
+transition-property: Specifies the name of the CSS property the transition effect is for
+transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-timing-function: Specifies the speed curve of the transition effect
+transition-delay: Specifies a delay (in seconds) for the transition effect
 
 ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
 linear - specifies a transition effect with the same speed from start to end
@@ -95,29 +61,29 @@ ease-out - specifies a transition effect with a slow end
 ease-in-out - specifies a transition effect with a slow start and end
 cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
 
+// in this order
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;
+
+// for example
+width 2s linear 1s
+
 http://www.roblaplaca.com/examples/bezierBuilder/
-
-What are Transformations?
-Transformations are a different form of animation. Instead of bridging two states on an element, a transformation physically changes the look of the element. You can transform many aspects of an element, such as:
-scaling—changing the size of the element
-rotating—spinning the element
-translating—moving the element
-
 */
-
-// transitions
-@mixin trans($t,$e) {
-	-webkit-transition: all $t $e;
-	-moz-transition: all $t $e;
-	-ms-transition: all $t $e;
-	-o-transition: all $t $e;
-	transition: all $t $e;
-}
 
 /*
-@mixin transY($tY) {
-  -webkit-transform: translateY($tY);
-      -ms-transform: translateY($tY);
-          transform: translateY($tY);
-}
+transitions:
+$tp = property (usually "all")
+$td = duration
+$tt = timing-function
+$ty = delay
 */
+@mixin trans($tp,$td,$tt,$ty) {
+	-webkit-transition: $tp $td $tt $ty;
+	-moz-transition: $tp $td $tt $ty;
+	-ms-transition: $tp $td $tt $ty;
+	-o-transition: $tp $td $tt $ty;
+	transition: $tp $td $tt $ty;
+}

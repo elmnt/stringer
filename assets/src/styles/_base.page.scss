@@ -1,6 +1,7 @@
-/* Base - Page
-======================================== */
-
+/**
+ * Base - Page
+ */
+ 
 html {
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
@@ -20,5 +21,5 @@ a img,
 input, 
 textarea,
 button {
-  @include trans($global-trans-time, $global-easing);
+  @include trans($global-trans-property, $global-trans-duration, $global-trans-timing-function, $global-trans-delay);
 }
