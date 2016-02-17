@@ -23,3 +23,10 @@ textarea,
 button {
   @include trans($global-trans-property, $global-trans-duration, $global-trans-timing-function, $global-trans-delay);
 }
+
+hr {
+  margin-top: $hr-margin-top;
+  margin-bottom: $hr-margin-bottom;
+  border: $hr-border;
+  border-bottom: $hr-border-bottom;
+}

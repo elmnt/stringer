@@ -137,6 +137,8 @@ ul.mm-list li a.mm-subopen {
 	text-transform: $mmm-navutility-input-text-transform;
 	font-size: $mmm-navutility-input-font-size;
 	line-height: 1em !important;
+	width: 100% !important;
+	display: block !important;
 }
 .mm-menu .navutility__input:hover,
 .mm-menu .navutility__input:active {

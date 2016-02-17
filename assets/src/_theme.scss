@@ -142,24 +142,7 @@ http://mmenu.frebsite.nl
 // responsive
 // media.print
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------------------- /Code that needs to be added to the kit */
-
 
 /* ---------------------- header */
 
@@ -181,41 +164,12 @@ so the menus are always on top.
 
 /* ----------- navutility */
 
-.navutility {} /* the nav element */
-
-.navutility__links {} // the ul
-  .navutility__links li {}
-  .navutility__links a {}
-
-.navutility__social {} // the ul
-  .navutility__social li {}
-  .navutility__social a {}
-
-.navutility__search {
-  width: 200px;
-}
-.navutility__search form {
-  width: 100%;
-}
 .navutility__input {
-  // width: 70% !important;
-  height: auto !important;
-}
-/*
-.navutility__button {
-  width: 30%;
-}
-*/
-
-/* additional final styles to foce equal height */
-.navutility__input {
-  vertical-align: top;
-  display:inline-block; 
-  //height:33px;
-}
-.navutility__button {
-  display:inline-block;
-  //height:33px;
+  margin: 0;
+  display: inline-block;
+  width: 240px !important;
+  font-size: 11px !important;
+  border: none !important;
 }
 
 /* ----------- /navutility */
@@ -259,9 +213,11 @@ so the menus are always on top.
 
 /* ---------------------- /header */
 
+/*
 form label {
   font-family: $sans !important;
 }
+*/
 
 // ----------- Footer
 

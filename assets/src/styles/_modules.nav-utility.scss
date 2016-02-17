@@ -14,7 +14,7 @@
 .navutility__social,
 .navutility__search {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 // ----------- links
@@ -24,13 +24,17 @@
 
 .navutility__links li {
 	display: inline-block; // make sure to comment out the whitespace in the list items
-	//float: left; // keeps them flush
+
+	&:first-of-type {
+		margin-left: $navutility-global-pading;
+	}
+
 }
 .navutility__links a {
 	display: block; 
 	background-color: $navutility-bg; 
 	color: $navutility-color; 
-	padding: $navutility-links-pad; 
+	padding: $navutility-global-pading; 
 	text-decoration: none; 
 	white-space: nowrap; 
 	text-transform: $navutility-text-transform;
@@ -50,19 +54,16 @@
 
 // ----------- social icons
 
-.navutility__social { // the ul
-	// vertical-align: middle !important;
-}
+.navutility__social {}
 .navutility__social li {
 	display: inline-block;
-	//float: left;
-	margin: $navbar-social-icons-margin;
+	margin: $navutility-global-margin;
 }
 .navutility__social a {
 	display: block; // this forces the a tag to respect the padding after the inline-block li setting
 	font-size: $navutility-global-font-size;
 	line-height: $nav-global-line-height;
-	padding: $navbar-social-icons-pad;
+	padding: $navutility-global-pading;
 	color: $navutility-color;
 
 	&:active,
@@ -70,71 +71,6 @@
 	&:hover {
 		color: $navutility-hover; 
 		background-color: $navutility-bg-hover; 
-	}
-
-}
-
-// ----------- search
-
-/*
-We need to add some styles to the utility nav search bar to over-ride the form-hack styles.
-We might need to throw some !important; bombs to override pesky browser defaults
-*/
-
-.navutility__search {
-	@extend .cf;
-}
-
-.navutility__search form {}
-
-.navutility__input,
-.navutility__button {
-	//float: left;
-	display: inline-block;
-}
-
-.navutility__input {
-	margin: 0 !important;
-	padding: $navbar-search-padding; 
-	background-color: $navbar-search-bg-color; 
-	font-size: $navutility-global-font-size !important;
-	line-height: $nav-global-line-height !important;
-	border: 0px !important;
-	outline: none !important;
-
-	&:hover {
-		outline: none !important;
-		border: 0px !important;
-		background-color: $navbar-search-bg-color-hover;
-	}
-	&:active,
-	&:focus {
-		outline: none !important;
-		border: 0px !important;
-		background-color: $navbar-search-bg-color-active;
-	}
-
-}
-
-.navutility__button {
-	margin: 0 !important;
-	padding: $navbar-search-padding;  
-	//font-size: $navbar-search-font-size !important;
-	//line-height: $navbar-search-line-height !important;
-	border: 0px !important;
-	outline: none !important;	
-	background-color: $button-navbar-background-color;
-
-	&:hover {
-		outline: none !important;
-		border: 0px !important;
-		background-color: $button-navbar-background-color-hover;
-	}
-	&:active,
-	&:focus {
-		outline: none !important;
-		border: 0px !important;
-		background-color: $button-navbar-background-color-active;
 	}
 
 }

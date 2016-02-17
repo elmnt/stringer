@@ -132,3 +132,6 @@ $(document).ready(function() {
   });
 
 });
+
+// init the wow.js plugin to delay show of animate.css elements
+new WOW().init();

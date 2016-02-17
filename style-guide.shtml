@@ -195,6 +195,51 @@
 
 
 
+
+
+
+<!-- ==================================== animate.css -->
+
+<div class="container">
+<div class="wrap">
+
+  <h3 class="sg__head">animate.css example (using wow.js to hold animations until elements are in view)</h3>
+  <div class="grid">
+    <div class="col-1-4" style="text-align:center;"><i class="fa fa-3x fa-rocket wow fadeInUp"></i></div>
+    <div class="col-1-4" style="text-align:center;"><i class="fa fa-3x fa-taxi wow fadeInUp"></i></div>
+    <div class="col-1-4" style="text-align:center;"><i class="fa fa-3x fa-ship wow fadeInUp"></i></div>
+    <div class="col-1-4" style="text-align:center;"><i class="fa fa-3x fa-truck wow fadeInUp"></i></div>
+  </div>
+
+  <p>&nbsp;</p>
+
+  <!--
+  <div class="pre-holder">
+  <pre style="margin-top:10px;">
+  <code data-language="html">
+    <div class="cmbox cmbox--basic">
+      <div class="cmbox__content cmbox__content--intro">
+        <h1 class="cmbox__title">Jackdaws Love My Sphinx of Quartz</h1>
+      </div>
+    </div>
+  </code>
+  </pre>
+  </div>
+  -->
+
+</div>
+</div>
+
+<!-- ==================================== /animate.css -->
+
+
+
+
+
+
+
+
+
 <!-- ==================================== center-aligned, middle-aligned -->
 
 <div class="container">
@@ -953,99 +998,187 @@
   <p><em>Get starter form code from the page source</em></p>
 
   <div class="grid">
+    <div class="single-col" style="margin:0 auto;max-width:800px!important;">
+      <div class="panel--form" style="margin:0 auto;max-width:800px!important;">
 
-    <div class="col-1-2">
-      <div class="panel--form">
+      <form name="MyForm" id="MyForm">
 
-      <form name="myForm" id="myForm">
+      <section id="form-input">
 
-        <label for="thing">Input Label</label>
-        <input type="text" name="thing" id="thing" placeholder="Placeholder">
+      <h6>Input</h6>
 
-        <label for="thing">Input Label</label>
-        <input type="email" name="thing" id="thing" placeholder="Placeholder">
+      <label for="">Input Type Text</label>
+      <input type="text" name="input-type-text">
 
-        <label>Select Box</label>
-        <select>
-          <option selected="selected">Please Choose</option>
-          <option value="homer">Homer</option>
-          <option value="marge">Marge</option>
-          <option value="bart">Bart</option>
-          <option value="lisa">Lisa</option>
-          <option value="maggie">Maggie</option>
-        </select>
-        <div class="cf cfxmb"></div>
+      <label for="">Input Type Email</label>
+      <input type="email" name="input-type-email">
 
-        <label>Textarea Label</label>
-        <textarea placeholder="Placehoder"></textarea>
+      <label for="">Input Type Password</label>
+      <input type="password" name="input-type-password">
 
-        <fieldset>
-          <label>Choose Your Favorite</label>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label></div>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label></div>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label></div>
-        </fieldset>
+      <label for="">Input Type URL</label>
+      <input type="url" name="input-type-url">
 
-        <fieldset>
-          <label>Check these out</label>
-          <div class="form--cb-group"><input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label></div>
-          <div class="form--cb-group"><input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label></div>
-          <div class="form--cb-group"><input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label></div>
-        </fieldset>
+      <label for="">Input Type Tel</label>
+      <input type="tel" name="input-type-tel">
 
-        <button type="submit">Submit</button>
+      <label for="">Input Type Number</label>
+      <input type="number" name="input-type-number">
 
+      <label for="">Input Type Search</label>
+      <input type="search" name="input-type-search">
+
+      <label for="">Input Type Checkbox</label>
+      <input type="checkbox" name="input-type-checkbox1"> Value 1<br>
+      <input type="checkbox" name="input-type-checkbox2"> Value 2<br>
+      <input type="checkbox" name="input-type-checkbox3"> Value 3<br>
+
+      <label for="">Input Type Radio</label>
+      <input type="radio" name="input-type-radio1"> Value 1<br>
+      <input type="radio" name="input-type-radio2"> Value 2<br>
+      <input type="radio" name="input-type-radio3"> Value 3<br>
+
+      <label for="">Input Type Range</label>
+      <input type="range" name="input-type-range">
+
+      <label for="">Input Type File</label>
+      <input type="file" name="input-type-file">
+      <input type="file" name="input-type-file">
+
+      <label for="">Input Type Color</label>
+      <input type="color" name="input-type-color">
+
+      <label for="">Input Type Date</label>
+      <input type="date" name="input-type-date">
+
+      <label for="">Input Type Datetime Local</label>
+      <input type="datetime-local" name="input-type-datetime-local">
+
+      <label for="">Input Type Month</label>
+      <input type="month" name="input-type-month">
+
+      <label for="">Input Type Time</label>
+      <input type="time" name="input-type-time">
+
+      <label for="">Input Type Week</label>
+      <input type="week" name="input-type-week">
+
+      </section>
+
+      <section id="form-select-button">
+
+      <h6>Datalist</h6>
+
+      <label for="">Input with Datalist</label>
+      <input list="browsers">
+
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+
+      </section>
+
+      <section id="form-textarea">
+
+      <h6>Textarea</h6>
+
+      <label for="textarea">Textarea</label>
+      <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+      </section>
+
+      <section id="form-select-option">
+
+      <h6>Select and Option</h6>
+
+      <label for="select-normal">Select Default</label>
+      <select name="select-normal" id="">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </select>
+
+      <label for="select-optgroup">Select with Optgroup</label>
+      <select name="select-optgroup" id="">
+
+        <optgroup label="Optgroup 1">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </optgroup>
+
+        <optgroup label="Optgroup 2">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </optgroup>
+
+      </select>
+
+      <label for="select-multiple">Select Multiple</label>
+      <select name="select-multiple" id="" multiple>
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </select>
+
+      </section>
+
+      <section id="form-select-button">
+
+      <h6>Buttons and Input Type Submit/Reset</h6>
+
+      <label for="button-type-button">Button Type Button</label>
+      <button type="button">Button</button>
+
+      <label for="button-type-reset">Button Type Reset</label>
+      <button type="reset">Reset</button>
+
+      <label for="button-type-submit">Button Type Submit</label>
+      <button type="submit">Submit</button>
+
+      <label for="">Input Type Button</label>
+      <input type="button" name="input-type-button" value="Button">
+
+      <label for="">Input Type Reset</label>
+      <input type="reset" name="input-type-reset">
+
+      <label for="">Input Type Submit</label>
+      <input type="submit" name="input-type-submit">
+
+      <label for="">Input Type Submit Disabled</label>
+      <input type="submit" name="input-type-submit" disabled>
+
+      <label for="">Input Type Image</label>
+      <input type="image" name="input-type-image">
+
+      </section>
+
+      <section id="form-select-fieldset">
+
+      <h6>Fieldset</h6>
+
+      <fieldset>
+
+      <legend>Legend Title</legend>
+
+      <label for="input-text">Input</label>
+      <input type="text" id="input-text">
+
+      <label for="input-password">Another Input</label>
+      <input type="text" id="input-password">
+
+      </fieldset>
+
+      </section>
       </form>
 
-      </div>
-    </div>
-  
-    <div class="col-1-2">
-      <div class="panel--form">
-
-      <form name="myForm" id="myForm">
-
-        <label for="thing">Input Label</label>
-        <input type="text" name="thing" id="thing" placeholder="Placeholder">
-
-        <label for="thing">Input Label</label>
-        <input type="email" name="thing" id="thing" placeholder="Placeholder">
-
-        <label>Select Box</label>
-        <select>
-          <option selected="selected">Please Choose</option>
-          <option value="homer">Homer</option>
-          <option value="marge">Marge</option>
-          <option value="bart">Bart</option>
-          <option value="lisa">Lisa</option>
-          <option value="maggie">Maggie</option>
-        </select>
-        <div class="cf cfxmb"></div>
-
-        <label>Textarea Label</label>
-        <textarea placeholder="Placehoder"></textarea>
-
-        <fieldset>
-          <label>Choose Your Favorite</label>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label></div>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label></div>
-          <div class="form--radio-group"><input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label></div>
-        </fieldset>
-
-        <fieldset>
-          <label>Check these out</label>
-          <div class="form--cb-group"><input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label></div>
-          <div class="form--cb-group"><input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label></div>
-          <div class="form--cb-group"><input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label></div>
-        </fieldset>
-
-        <button type="submit">Submit</button>
-
-      </form>
-
-      </div>
-    </div>
-  
+      </div><!-- /.panel--form -->
+    </div><!-- /.single-col -->
   </div>
 
 </div>

@@ -31,9 +31,11 @@ force-clear it with this, AND an inline bottom margin.
 	clear: both;
 }
 
-// ----------- position 
+// ----------- display 
 
 .hide { display: none !important; }
+
+// ----------- position 
 
 .inline       { display: inline; }
 .block        { display: block; }
@@ -45,11 +47,6 @@ force-clear it with this, AND an inline bottom margin.
 .fleft  { float: left; }
 .fright { float: right; }
 
-.fit { 
-  width: 100%; 
-  max-width: 100%; 
-}
-
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed    { position: fixed; }
@@ -58,6 +55,20 @@ force-clear it with this, AND an inline bottom margin.
 .right-0  { right: 0; }
 .bottom-0 { bottom: 0; }
 .left-0   { left: 0; }
+
+.bold { font-weight: bold; }
+.regular { font-weight: normal; }
+.italic { font-style: italic; }
+.caps { text-transform: uppercase; }
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.justify { text-align: justify; }
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
 
 // ----------- center content horizontally
 

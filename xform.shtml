@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FormHack</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hackable SASS-based form reset">
+  
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500, 700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<div class="container">
+  <h1>FormHack</h1>
+
+  <section>
+
+    <p>FormHack is a hackable <a href="http://sass-lang.com">SASS</a>-based form reset. Although there are standard css resets for forms out there, I wanted to created one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences. </p>
+
+    <p>FormHack works by providing a few variables that allow you to change some common attributes such as border-radius, input height/width, and colours. By changing these attributes, you will get a beautiful form that is consistent across all major browsers. I have also organised the code in a way that is (hopefully) easy for you to edit if you want to alter more than the given settings.</p>
+
+    <p>If you have any questions or suggestions for how I can make this better, tweet me at <a href="https://twitter.com/ireaderinokun">@ireaderinokun</a>.</p>
+
+   
+
+    <p><a class="twitter-share-button"
+      href="https://twitter.com/share"
+      data-text="FormHack - A hackable css form reset"
+      data-url="http://formhack.io"
+      data-via="ireaderinokun"
+      data-related="ireaderinokun"> Tweet </a>
+    <script>
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+    </script> 
+    </p>
+
+
+
+    <h3>Installation</h3>
+
+    <p>1. <a href="https://github.com/ireade/formhack">Download from Github</a> (SCSS and SASS versions available)</p>
+
+
+    <p>2. Clone the repo</p>
+    <div class="highlight"><pre><code class="language-bash" data-lang="bash">git clone https://github.com/ireade/formhack.git</code></pre></div>
+  
+    <p>3. Install via bower</p>
+    <div class="highlight"><pre><code class="language-bash" data-lang="bash">bower install formhack</code></pre></div>
+
+
+
+  </section>
+
+  <section>
+
+    <h2>Example Config</h2>
+
+    <p>This is an example config which shows the default settings:</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">//</span> <span class="nt">Font</span>
+<span class="o">$</span><span class="nt">fh-font-family</span><span class="o">:</span> <span class="s1">&#39;Raleway&#39;</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-font-size</span><span class="o">:</span> <span class="nt">16px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-font-color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="nt">40</span><span class="o">,</span> <span class="nt">40</span><span class="o">,</span> <span class="nt">40</span><span class="o">);</span>
+
+<span class="o">//</span> <span class="nt">Borders</span>
+<span class="o">$</span><span class="nt">fh-border-radius</span><span class="o">:</span> <span class="nt">5px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-border-width</span><span class="o">:</span> <span class="nt">1px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-border-style</span><span class="o">:</span> <span class="nt">solid</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-border-color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="nt">200</span><span class="o">,</span> <span class="nt">200</span><span class="o">,</span> <span class="nt">200</span><span class="o">);</span>
+
+<span class="o">//</span> <span class="nt">Inputs</span><span class="o">,</span> <span class="nt">Textareas</span><span class="o">,</span> <span class="nt">Select</span><span class="o">,</span> <span class="nt">Option</span>
+<span class="o">$</span><span class="nt">fh-input-height</span><span class="o">:</span> <span class="nt">40px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-input-width</span><span class="o">:</span> <span class="nt">100</span><span class="o">%;</span>
+<span class="o">$</span><span class="nt">fh-input-max-width</span><span class="o">:</span> <span class="nt">400px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-input-bg-color</span><span class="o">:</span> <span class="nf">#fff</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-focus-bg-color</span><span class="o">:</span> <span class="nt">rgb</span><span class="o">(</span><span class="nt">220</span><span class="o">,</span> <span class="nt">220</span><span class="o">,</span> <span class="nt">220</span><span class="o">);</span>
+<span class="o">$</span><span class="nt">fh-focus-border-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-border-color</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-focus-font-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-font-color</span><span class="o">;</span>
+
+<span class="o">//</span> <span class="nt">Select</span> <span class="nt">Vendor</span> <span class="nt">Styling</span>
+<span class="o">$</span><span class="nt">fh-allow-vendor-styling</span><span class="o">:</span> <span class="nt">true</span><span class="o">;</span>
+
+<span class="o">//</span> <span class="nt">Fieldset</span> <span class="o">&amp;</span> <span class="nt">Legend</span> <span class="nt">Styling</span>
+<span class="o">$</span><span class="nt">fh-fieldset-bare</span><span class="o">:</span> <span class="nt">false</span><span class="o">;</span>
+
+<span class="o">//</span> <span class="nt">Buttons</span> <span class="o">&amp;</span> <span class="nt">Input</span> <span class="nt">Submits</span>
+<span class="o">$</span><span class="nt">fh-button-height</span><span class="o">:</span> <span class="nt">40px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-button-width</span><span class="o">:</span> <span class="nt">100</span><span class="o">%;</span>
+<span class="o">$</span><span class="nt">fh-button-max-width</span><span class="o">:</span> <span class="nt">200px</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-button-font-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-font-color</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-button-bg-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-focus-bg-color</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-button-hover-bg-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-border-color</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-button-hover-font-color</span><span class="o">:</span> <span class="o">$</span><span class="nt">fh-font-color</span><span class="o">;</span>
+
+<span class="o">//</span> <span class="nt">Layout</span>
+<span class="o">$</span><span class="nt">fh-centered</span><span class="o">:</span> <span class="nt">false</span><span class="o">;</span>
+<span class="o">$</span><span class="nt">fh-display</span><span class="o">:</span> <span class="nt">block</span><span class="o">;</span></code></pre></div>
+
+<p>With these default settings, you can acheive the styling below:</p>
+
+  </section>
+
+  <form>
+    <section id="form-input">
+<h2>Input</h2>
+
+
+  <label for="">Input Type Text</label>
+  <input type="text" name="input-type-text">
+
+  <label for="">Input Type Email</label>
+  <input type="email" name="input-type-email">
+
+  <label for="">Input Type Password</label>
+  <input type="password" name="input-type-password">
+
+  <label for="">Input Type URL</label>
+  <input type="url" name="input-type-url">
+
+  <label for="">Input Type Tel</label>
+  <input type="tel" name="input-type-tel">
+
+  <label for="">Input Type Number</label>
+  <input type="number" name="input-type-number">
+
+  <label for="">Input Type Search</label>
+  <input type="search" name="input-type-search">
+
+
+
+  <label for="">Input Type Checkbox</label>
+  <input type="checkbox" name="input-type-checkbox1"> Value 1<br>
+  <input type="checkbox" name="input-type-checkbox2"> Value 2<br>
+  <input type="checkbox" name="input-type-checkbox3"> Value 3<br>
+
+  <label for="">Input Type Radio</label>
+  <input type="radio" name="input-type-radio1"> Value 1<br>
+  <input type="radio" name="input-type-radio2"> Value 2<br>
+  <input type="radio" name="input-type-radio3"> Value 3<br>
+
+  <label for="">Input Type Range</label>
+  <input type="range" name="input-type-range">
+
+
+
+  <label for="">Input Type File</label>
+  <input type="file" name="input-type-file">
+  <input type="file" name="input-type-file">
+
+  <label for="">Input Type Color</label>
+  <input type="color" name="input-type-color">
+
+
+
+  <label for="">Input Type Date</label>
+  <input type="date" name="input-type-date">
+
+  <label for="">Input Type Datetime Local</label>
+  <input type="datetime-local" name="input-type-datetime-local">
+
+  <label for="">Input Type Month</label>
+  <input type="month" name="input-type-month">
+
+  <label for="">Input Type Time</label>
+  <input type="time" name="input-type-time">
+
+  <label for="">Input Type Week</label>
+  <input type="week" name="input-type-week">
+
+
+</section>
+    <section id="form-select-button">
+<h2>Datalist</h2>
+
+
+  <label for="">Input with Datalist</label>
+  <input list="browsers">
+
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+
+
+</section>
+
+    <section id="form-textarea">
+<h2>Textarea</h2>
+
+
+  <label for="textarea">Textarea</label>
+  <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+
+
+
+</section>
+    <section id="form-select-option">
+<h2>Select and Option</h2>
+
+
+  <label for="select-normal">Select Default</label>
+  <select name="select-normal" id="">
+      <option value="">Option 1</option>
+      <option value="">Option 2</option>
+      <option value="">Option 3</option>
+  </select>
+
+
+  <label for="select-optgroup">Select with Optgroup</label>
+  <select name="select-optgroup" id="">
+      <optgroup label="Optgroup 1">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </optgroup>
+
+      <optgroup label="Optgroup 2">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+      </optgroup>
+  </select>
+
+
+  <label for="select-multiple">Select Multiple</label>
+  <select name="select-multiple" id="" multiple>
+      <option value="">Option 1</option>
+      <option value="">Option 2</option>
+      <option value="">Option 3</option>
+  </select>
+
+</section>
+    <section id="form-select-button">
+<h2>Buttons and Input Type Submit/Reset</h2>
+
+
+  <label for="button-type-button">Button Type Button</label>
+  <button type="button">Button</button>
+
+  <label for="button-type-reset">Button Type Reset</label>
+  <button type="reset">Reset</button>
+
+  <label for="button-type-submit">Button Type Submit</label>
+  <button type="submit">Submit</button>
+
+  <label for="">Input Type Button</label>
+  <input type="button" name="input-type-button" value="Button">
+
+  <label for="">Input Type Reset</label>
+  <input type="reset" name="input-type-reset">
+
+  <label for="">Input Type Submit</label>
+  <input type="submit" name="input-type-submit">
+  
+  <label for="">Input Type Submit Disabled</label>
+  <input type="submit" name="input-type-submit" disabled>
+
+  <label for="">Input Type Image</label>
+  <input type="image" name="input-type-image">
+
+
+</section>
+    <section id="form-select-fieldset">
+<h2>Fieldset</h2>
+
+  <fieldset>
+
+    <legend>Legend Title</legend>
+
+  <label for="input-text">Input</label>
+    <input type="text" id="input-text">
+
+    <label for="input-password">Another Input</label>
+    <input type="text" id="input-password">
+    
+  </fieldset>
+
+</section>
+  </form>
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-60256750-3', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</div>
+</body>
+</html>
+

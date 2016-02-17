@@ -37,6 +37,7 @@ $site-color-1: #333;
 $site-color-2: #666;
 $site-color-3: #999;
 $site-color-4: #ccc;
+$site-color-5: #eee;
 
 //$site-color-error: red;
 //$site-color-success: green;
@@ -201,57 +202,51 @@ $button-color-alttwo: $site-color-2;
  * Modules: styles/modules.form-hack
  */
 
-// ----------- form-hack font
+// Font
+$fh-font-family: $sans !default;
+$fh-font-size: 14px !default;
+$fh-font-color: $base-text-color !default;
+$fh-label-font-size: .85rem;
+$fh-label-line-height: 1em;
+$fh-label-margin-top: 1rem;
 
-$fh-font-family: $sans !important;
-$fh-font-size: 14px;
-$fh-font-color: $base-text-color;
+// Borders
+$fh-border-radius: 0 !default;
+$fh-border-width: 2px !default;
+$fh-border-style: solid !default;
+$fh-border-color: $base-text-color !default;
 
-// ----------- form-hack borders
+// Inputs, Textareas, Select, Option
+$fh-input-padding: .5rem !default;
+$fh-input-height: auto !default;
+$fh-select-height: 40px !default;
+$fh-input-width: 100% !default;
+$fh-input-max-width: 100% !default;
+$fh-input-bg-color: white !default;
+$fh-focus-bg-color: white !default;
+$fh-focus-border-color: $site-color-2 !default;
+$fh-focus-font-color: $site-color-2 !default;
+$fh-textarea-height: 200px !default;
 
-$fh-border-radius: 0px;
-$fh-border-width: 2px;
-$fh-border-style: solid;
-$fh-border-color: $base-text-color;
+// Select Vendor Styling
+$fh-allow-vendor-styling: true !default;
 
-// ----------- form-hack inputs, textareas, select, option
-
-$fh-input-height: 40px;
-$fh-input-width: 100%;
-$fh-input-max-width: 100%;
-$fh-input-bg-color: #fff;
-$fh-focus-bg-color: #fff;
-$fh-focus-border-color: $site-color-2;
-$fh-focus-font-color: $site-color-2;
-$fh-textarea-height: 200px;
-
-// ----------- form-hack select vendor styling
-
-$fh-allow-vendor-styling: true;
-
-// ----------- form-hack fieldsets & legends
-
-$fh-fieldset-bare: false;
+// Fieldset & Legend Styling
+$fh-fieldset-bare: false !default;
 $fh-background-color: #f6f6f6;
 
-// ----------- form-hack buttons & input submits
+// Buttons & Input Submits
+$fh-button-height: auto !default;
+$fh-button-width: 100% !default;
+$fh-button-max-width: 200px !default;
+$fh-button-font-color: $fh-font-color !default;
+$fh-button-bg-color: $fh-focus-bg-color !default;
+$fh-button-hover-bg-color: $fh-border-color !default;
+$fh-button-hover-font-color: $fh-font-color !default;
 
-// $fh-button-height: 40px; // font-hack uses a specific button height
-$fh-button-height: auto; // but we want the padding to determine this
-$fh-button-width: 100%;
-$fh-button-max-width: 200px;
-
-// ----------- form-hack colors
-
-$fh-button-font-color: $fh-font-color;
-$fh-button-bg-color: $fh-focus-bg-color;
-$fh-button-hover-bg-color: $fh-border-color;
-$fh-button-hover-font-color: $fh-font-color;
-
-// ----------- form-hack layout
-
-$fh-centered: false;
-$fh-display: block;
+// Layout
+$fh-centered: false !default;
+$fh-display: block !default;
 
 // ----------- styles/modules.tables
 
@@ -318,17 +313,16 @@ $navutility-uniform-pad: 10px;
 $navutility-holder-bg: $site-color-1; // the container bg
 $navutility-bg: $site-color-1; 
 $navutility-color: $site-color-4; 
-$navutility-links-pad: 10px 1rem;
-$navutility-social-icons-pad: 10px;
-//$utility-search-button-pad: 10px; 
+$navutility-global-pading: 10px;
+$navutility-global-margin: 0;
 $navutility-hover: white; 
 $navutility-bg-hover: $site-color-1; 
 $navutility-font-weight: $fw-semibold;
 
 $navutility-text-transform: uppercase;
 
-// ----------- modules.nav-utility.scss (search bar)
-
+// search bar
+/* put custom styles in _theme.scss to over-ride form-hack styles
 $navbar-search-padding: 10px;
 $navbar-search-bg-color: white; 
 $navbar-search-font-size: $navutility-global-font-size; 
@@ -336,6 +330,7 @@ $navbar-search-line-height: $nav-global-line-height;
 $navbar-search-bg-color-hover: darken($navbar-search-bg-color, 15%);
 $navbar-search-bg-color-focus: darken($navbar-search-bg-color, 15%);
 $navbar-search-bg-color-active: darken($navbar-search-bg-color, 15%);
+*/
 
 // ----------- modules.nav-main.scss
 
@@ -408,20 +403,20 @@ $rslides-caption-font-size-sm: 1.5rem;
 
 // ----------- styles/modules.panel
 
-$panel-background-color: $site-color-4;
+$panel-background-color: $site-color-5;
 $panel-max-width: 600px;
 $panel-padding: 4rem;
 $panel-padding-tablet: 2rem;
 $panel-padding-mobile: 1rem;
-$panel-border: 5px solid $site-color-4;
+$panel-border: 5px solid $site-color-5;
 $panel-border-radius: $base-border-radius;
-$panel-title-color: white;
+$panel-title-color: $base-text-color;
 $panel-copy-color: $base-text-color;
 
 // ----------- panels for form holder
 
-$panel-form-border: 5px solid $site-color-4;
-$panel-form-background-color: $site-color-4;
+$panel-form-border: 5px solid $site-color-5;
+$panel-form-background-color: $site-color-5;
 $panel-form-padding: 2rem;
 
 // ----------- styles/modules.accordion

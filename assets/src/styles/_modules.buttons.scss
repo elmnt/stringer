@@ -3,8 +3,18 @@
 
 // ----------- base button
 
+/*
+The input styles were commented out in the form-hack partial,
+and placed here, to remove any conflicts.
+*/
+
 button,
-.button {
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+
   display: inline-block; 
   color: $button-color; 
   background-color: $button-background-color;

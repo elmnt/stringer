@@ -74,7 +74,6 @@ $(document).ready(function(){
 
 });
 
-
 // the secondary header that shows on scroll-down
 $(window).scroll(function (event) {
 
