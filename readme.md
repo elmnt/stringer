@@ -20,6 +20,7 @@ I'm adding a changelog with this push, which I'm labeling v2.0, as I've made som
 - Reformatted my entire Sass kit 
 - Rebuilt the grid system (flexbox addition coming soon)
 - Multiple changes to my styles and scripts to decrease weight and increase performance
+- Updated [formhack.io](http://formhack.io/ "FormHack") (unstyled, but all components in place)
 
 ### Credit/Inspiration
 
