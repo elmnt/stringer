@@ -14,7 +14,7 @@ This is both a workable boilerplate that I use to kick off new web projects, and
 
 ### Changelog
 
-I'm adding a changelog with this push, which I'm labeling v2.0, as I've made some major changes, and have a lot more on my to-do list.
+I'm adding a changelog with this push, which I'm labeling v2.0, as I've made some major changes. I have a lot more on my to-do list, and I'd like to keep a better record as it grows.
 
 #### v2.0
 - Reformatted my entire Sass kit 
