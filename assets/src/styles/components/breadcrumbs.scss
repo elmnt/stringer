@@ -1,0 +1,26 @@
+/**
+ * Breadcrumbs
+ */
+
+.breadcrumb {
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  margin: 0 4px;
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.breadcrumb strong {
+  margin-left: 4px;
+  color: #333333;
+}

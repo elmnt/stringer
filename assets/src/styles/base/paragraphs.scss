@@ -1,0 +1,23 @@
+/**
+ * Typography
+ */
+
+p {
+	margin: 0 0 $spacing 0;
+}
+
+p.lead {
+	font-size: 120%;
+}
+
+pre,
+code,
+samp {
+  font-family: $mono-font;
+  font-size: inherit;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: $pre-margin-bottom;
+  overflow-x: scroll;
+}

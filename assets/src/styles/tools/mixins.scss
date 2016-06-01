@@ -1,0 +1,169 @@
+/**
+ * Mixins
+ */
+
+
+/**
+ * Convert pixels to REMs with fallback for older browsers
+ * Example usage:
+ * @include font-size(14px)
+ */
+@mixin font-size($size) {
+	font-size: $size;
+	font-size: ($size / $base-font-size) * 1rem;
+}
+
+
+
+/**
+ * Add a breakpoint
+ * Example usage:
+ * @include breakpoint(bp2) { // css }
+ */
+@mixin breakpoint($size) {
+	@if $size == bp2 {
+		@media (min-width: $bp2) { @content; }
+	}
+	@else if $size == bp3 {
+		@media (min-width: $bp3) { @content; }
+	}
+	@else if $size == bp4 {
+		@media (min-width: $bp4) { @content; }
+	}
+	@else if $size == bp5 {
+		@media (min-width: $bp5) { @content; }
+	}
+	@else if $size == bp6 {
+		@media (min-width: $bp6) { @content; }
+	}
+	@else if $size == bp7 {
+		@media (min-width: $bp7) { @content; }
+	}
+}
+
+
+
+/**
+ * Create a breakpoint for below a given size 
+ * Example usage:
+ * @include below(200px) { // css }
+ */
+@mixin below($size) {
+	@media (max-width: $size) { @content; }
+}
+
+
+
+/**
+ * Create a breakpoint for above a given size 
+ * Example usage:
+ * @include above(200px) { // css }
+ */
+@mixin above($size) {
+	@media (min-width: $size) { @content; }
+}
+
+
+// border-box
+@mixin bbox {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+// content box
+@mixin cbox {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box; 
+}
+
+// border radius (uniform)
+// We should use a global setting instead of this
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// border radius (set each corner)
+@mixin border-radius-select($radtl,$radtr,$radbr,$radbl) {
+    -webkit-border-top-left-radius: $radtl;
+   -webkit-border-top-right-radius: $radtr;
+-webkit-border-bottom-right-radius: $radbr;
+ -webkit-border-bottom-left-radius: $radbl;
+		    -moz-border-radius-topleft: $radtl;
+		   -moz-border-radius-topright: $radtr;
+		-moz-border-radius-bottomright: $radbr;
+		 -moz-border-radius-bottomleft: $radbl;
+			   -ms-border-radius-topleft: $radtl;
+			  -ms-border-radius-topright: $radtr;
+		 -ms-border-radius-bottomright: $radbr;
+			-ms-border-radius-bottomleft: $radbl;
+				    border-top-left-radius: $radtl;
+				   border-top-right-radius: $radtr;
+				border-bottom-right-radius: $radbr;
+				 border-bottom-left-radius: $radbl;
+}
+
+/*
+What are Transitions?
+A transition is an animation that happens between changes.
+
+transition: (shorthand)
+transition-property: Specifies the name of the CSS property the transition effect is for
+transition-duration: Specifies how many seconds or milliseconds a transition effect takes to complete
+transition-timing-function: Specifies the speed curve of the transition effect
+transition-delay: Specifies a delay (in seconds) for the transition effect
+
+ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+linear - specifies a transition effect with the same speed from start to end
+ease-in - specifies a transition effect with a slow start
+ease-out - specifies a transition effect with a slow end
+ease-in-out - specifies a transition effect with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+
+// in this order
+transition-property: width;
+transition-duration: 2s;
+transition-timing-function: linear;
+transition-delay: 1s;
+
+// for example
+width 2s linear 1s
+
+http://www.roblaplaca.com/examples/bezierBuilder/
+*/
+
+/*
+transitions:
+$tp = property (usually "all")
+$td = duration
+$tt = timing-function
+$ty = delay
+*/
+@mixin trans($tp,$td,$tt,$ty) {
+	-webkit-transition: $tp $td $tt $ty;
+	-moz-transition: $tp $td $tt $ty;
+	-ms-transition: $tp $td $tt $ty;
+	-o-transition: $tp $td $tt $ty;
+	transition: $tp $td $tt $ty;
+}
+
+@mixin transY($tY) {
+  -webkit-transform: translateY($tY);
+      -ms-transform: translateY($tY);
+          transform: translateY($tY);
+}
+
+@mixin transY($tX) {
+  -webkit-transform: translateY($tX);
+      -ms-transform: translateY($tX);
+          transform: translateY($tX);
+}
+
+// force text-smoothing (useful with headroom.js)
+@mixin forcesmooth {
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}

@@ -1,0 +1,24 @@
+/**
+ * Alerts
+ */
+
+.alert {
+  margin: 0 0 $spacing 0;
+  padding: $spacing;
+  color: red;
+  border-radius: $border-radius;
+  background: $color-error;
+  -webkit-font-smoothing: antialiased;
+}
+
+.alert--info {
+  background: white;
+}
+
+.alert--success {
+  background: $color-success;
+}
+
+.alert--warning {
+  background: $color-warning;
+}

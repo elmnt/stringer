@@ -1,0 +1,16 @@
+/**
+ * Quotes
+ */
+
+blockquote {
+  margin: $blockquote-margin;
+  padding: $blockquote-padding;
+  color: $blockquote-color;
+  border-left: $blockquote-border-left;
+}
+
+blockquote,
+blockquote p {
+  font-size: $h4-size;
+  font-style: italic;
+}

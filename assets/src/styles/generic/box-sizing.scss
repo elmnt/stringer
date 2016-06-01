@@ -1,0 +1,14 @@
+/**
+ * Box sizing
+ */
+
+
+html {
+  @include bbox;  
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

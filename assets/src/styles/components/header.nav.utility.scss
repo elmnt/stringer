@@ -1,0 +1,85 @@
+/**
+ * Header - Nav: Utility
+ */
+
+.container--navutility { 
+  background-color: $navutility-holder-bg; 
+  // these top/bottom borders give the entire element uniform top/bottom space
+  border-top: 5px solid $navutility-holder-bg;
+  border-bottom: 5px solid $navutility-holder-bg; 
+}
+
+// display settings for the ul
+.navutility__links,
+.navutility__social,
+.navutility__search {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// ----------- links
+
+// the ul for the links
+.navutility__links {}
+
+.navutility__links li {
+  display: inline-block; // make sure to comment out the whitespace in the list items
+
+  &:first-of-type {
+    margin-left: $spacing;
+  }
+
+}
+.navutility__links a {
+  display: block; 
+  background-color: $navutility-bg; 
+  color: $navutility-color; 
+  padding: $navutility-padding; 
+  text-decoration: none; 
+  white-space: nowrap; 
+  text-transform: $navutility-text-transform;
+  font-size: $navutility-font-size;
+  line-height: $navutility-line-height;
+  font-weight: $navutility-font-weight;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $navutility-color-hover; 
+    background-color: $navutility-bg-hover; 
+  }
+
+}
+
+// ----------- social icons
+
+.navutility__social {}
+.navutility__social li {
+  display: inline-block;
+  margin: $navutility-margin;
+}
+.navutility__social a {
+  display: block; // this forces the a tag to respect the padding after the inline-block li setting
+  font-size: $navutility-font-size;
+  line-height: $nav-global-line-height;
+  padding: $navutility-padding;
+  color: $navutility-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $navutility-color-hover; 
+    background-color: $navutility-bg-hover; 
+  }
+
+}
+
+// ---------------------- Add Styles:
+
+.navutility__input {
+  margin: 0 $spacing 0 0;
+  display: inline-block;
+  width: 240px !important;
+  font-size: 12px !important;
+  border: none !important;
+}

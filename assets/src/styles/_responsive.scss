@@ -1,0 +1,110 @@
+/**
+ * Some global responsive styles
+ * Specific responsive styles are in the components
+ */
+
+.display-none { display: none !important }
+.nav-button { display: none; }
+.mmenu-trigger__holder { display: none; }
+
+// control type first, then everything else
+@media all and (max-width: $break-lg){  
+  html { 
+    //font-size: $base-font-size-lg; 
+  }
+}
+@media all and (max-width: $break-md){  
+  html { 
+    //font-size: $base-font-size-md; 
+  }
+}
+@media all and (max-width: $break-sm){  
+  html { 
+    //font-size: $base-font-size-sm; 
+  }
+}
+
+@media all and (max-width: 1000px){}
+@media all and (max-width: 800px) {}
+@media all and (max-width: 600px) {}
+
+@media all and (max-width: 900px){
+
+  // ----------- portfolio display grids
+
+  .grid .four {
+    float: left; 
+    display: inline;
+    width: 49.5%;
+  }
+  .grid .counter .four:nth-child(2n+2) {  
+    margin-right: 0;
+  }
+
+  // ----------- /portfolio display grids
+
+}
+
+@media all and (max-width: 800px){
+
+  .container {
+    padding: $container-pad-tablet;
+  }
+
+  // ----------- multi-column grids
+
+  [class*='col-'] {
+    float: none; 
+    width: 100%; 
+    margin-right: 0;  
+  }
+
+  // ----------- /multi-column grids
+	
+	// ----------- navigation
+
+  .mmenu-trigger__holder { 
+    display: block;
+    text-align: $mmenu-trigger-align;
+  }
+  .mmenu-trigger__holder:before,
+  .mmenu-trigger__holder:after {
+    content: " ";
+    display: table
+  }
+  .mmenu-trigger__holder:after { clear: both; }
+
+  .mmenu-trigger { 
+    //padding: $nav-mobile-button-pad;
+    //padding: 20px !important;
+    font-family: $sans;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .mmenu-trigger .fa { padding: 1.25rem; }
+
+  // hide the desktop nav elements:
+  // utility nav
+  .container--navutility { display: none; }
+  // main nav
+  // not the whole container for this one, since it holds the trigger
+  .navmain { display: none; }
+  
+  // ----------- /navigation
+
+}
+
+@media all and (max-width: 600px){
+
+	// ----------- portfolio display grids
+
+	.grid .four {
+		float: none; 
+		display: block;
+		width: 100%;
+		margin: 0 0 1% 0;
+	}
+
+	// ----------- /portfolio display grids
+
+}

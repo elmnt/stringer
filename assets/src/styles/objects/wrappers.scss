@@ -1,0 +1,54 @@
+/**
+ * Wrappers
+ */
+
+.container,
+.container--full,
+.container--nav {
+  margin: $spacing auto;
+  padding: $container-pad;
+  width: 100%; 
+  max-width: $container-max-width; 
+  text-align: center;  
+  @extend .cf;
+}
+
+.container--full {
+  @extend .container;
+  padding: 0;
+}
+
+.container--navutility,
+.container--navmain {
+  @extend .container;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: $wrap-max-width; 
+  min-width: $wrap-min-width; 
+  text-align: left;
+  @extend .cf;
+}
+
+// center-middle box
+// content centered horizontally & vertically
+
+// the holder
+.cmbox {
+  width: 100%;
+  display: table;
+  text-align: center;
+  background-color: $cmbox-default-background;
+  padding: $cmbox-default-padding;
+}
+
+// the content
+.cmbox__content {
+  margin: 0;
+  padding: 0;
+  display: table-cell;
+  vertical-align: middle;
+}

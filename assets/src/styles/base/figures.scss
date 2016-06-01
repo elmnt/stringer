@@ -1,0 +1,28 @@
+/**
+ * Figure
+ */
+
+figure {
+  margin: $figure-margin; 
+  padding: $figure-padding; 
+}
+
+figcaption {
+  margin: $figcaption-margin;
+  padding: $figcaption-padding;
+  font-family: $figcaption-font-family;
+  font-size: $figcaption-font-size;
+  line-height: $figcaption-line-height;
+  color: $figcaption-color;
+  background-color: $figcaption-background-color;
+}
+
+figcaption p {
+  margin: 0;
+  padding: 0;
+  font-family: $figcaption-font-family;
+  font-size: $figcaption-font-size;
+  line-height: $figcaption-line-height;
+  color: $figcaption-color;
+  background-color: $figcaption-background-color;
+}

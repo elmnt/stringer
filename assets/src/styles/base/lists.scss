@@ -1,0 +1,42 @@
+/**
+ * Lists
+ */
+
+dl,
+ol,
+ul {
+  margin: 0 0 $list-margin 0;
+}
+
+// ----------- Ordered list
+
+ol {
+	padding-left: $spacing;
+}
+
+// ----------- Unordered list
+
+ul {
+	padding-left: $spacing;
+}
+
+// ----------- Definition list
+
+dl {
+  dt {
+    font-weight: $dt-font-weight;
+    margin: $dt-margin;
+    padding: $dt-padding;
+  }
+  dd {
+    margin: $dd-margin;
+    padding: $dd-padding;
+  }
+}
+
+.list-reset {
+  list-style-type: none;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
