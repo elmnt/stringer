@@ -1,0 +1,28 @@
+/**
+ * Images
+ */
+
+img {
+  max-width: 100%;
+  vertical-align: $img-vertical-align; 
+  display: block; 
+}
+
+// responsive img
+img.fit,
+.fit img {
+  width: 100%;
+  max-width: 100%;
+}
+
+svg { max-height: 100% }
+
+/*
+Google maps fix
+https://github.com/inuitcss/base.images/blob/master/_base.images.scss
+*/
+.gm-style img,
+img[width],
+img[height] {
+  max-width: none;
+}

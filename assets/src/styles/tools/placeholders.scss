@@ -1,0 +1,20 @@
+/**
+ * Placeholders
+ */
+
+
+/**
+ * Clearfix
+ * Example usage:
+ * .wrap {
+ * 		...
+ * 		@extend %clearfix;
+ * }
+ */
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

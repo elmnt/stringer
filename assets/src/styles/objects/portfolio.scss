@@ -1,0 +1,33 @@
+/**
+ * Portfolio Display
+ */
+ 
+.portfolio__four {
+  float: left; 
+  display: inline;
+  width: 24.25%; 
+  margin: 0 1% 1% 0; 
+}
+.portfolio__four:nth-child(4n+4) {  
+  margin-right: 0;
+}
+
+.portfolio__three {
+  float: left; 
+  display: inline;
+  width: 32.6666666667%; 
+  margin: 0 1% 1% 0; 
+}
+.portfolio__three:nth-child(3n+3) {  
+  margin-right: 0;
+}
+
+.portfolio__two {
+  float: left; 
+  display: inline;
+  width: 49.5%; 
+  margin: 0 1% 1% 0; 
+}
+.portfolio__two:nth-child(2n+2) {  
+  margin-right: 0;
+}

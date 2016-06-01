@@ -1,0 +1,72 @@
+/**
+ * Buttons
+ */
+
+/*
+The input styles were commented out in the form-hack partial,
+and placed here, to remove any conflicts.
+*/
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="image"] {
+  display: inline-block; 
+  color: $button-color; 
+  background-color: $button-background;
+  text-decoration: none; 
+  text-transform: $button-text-transform; 
+  text-align: center; 
+  font-family: $sans; 
+  font-weight: $button-font-weight-default; 
+  font-weight: $button-font-weight; 
+  font-size: $button-font-size; 
+  letter-spacing: $button-letter-spacing;
+  line-height: 1em; 
+  cursor: pointer; 
+  padding: $button-padding;
+  margin: $button-margin;
+  -webkit-font-smoothing: antialiased;
+  border: none;
+
+    &:visited {
+      color: $button-color;
+      background-color: $button-background;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $button-color-hover;
+      background-color: $button-background-hover;
+    }
+
+}
+
+// ----------- transparent button
+
+.button--trans {
+  color: $button-trans-color;
+  background-color: $button-trans-background;
+  border: $button-trans-border;
+
+    &:visited {
+      color: $button-trans-color;
+      background-color: $button-trans-background;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $button-trans-color-hover;
+      background-color: $button-trans-background-hover;
+    }
+
+}
+
+// ----------- big button
+
+.button--big { 
+  padding: $button-big-padding;
+  font-size: $button-big-font-size;
+}

@@ -1,0 +1,573 @@
+/**
+ * Settings
+ */
+
+// ----------- Global
+
+$debug: false;
+
+$spacing:       1rem;
+$spacing-large: $spacing*2;
+$spacing-small: $spacing/2;
+
+$border-radius-small: 4px;
+$border-radius:       8px;
+$border-radius-large: 16px;
+
+// ----------- Colors
+
+$brand-color-0: CornflowerBlue ;
+$brand-color-1: orange;
+
+$site-color-3: #333;
+$site-color-6: #666;
+$site-color-9: #999;
+$site-color-c: #ccc;
+
+$color-warning:   orange;
+$color-error:     red;
+$color-success:   green;
+
+// ----------- Type
+
+// Google Fonts: Open Sans 400/600/700
+// Google Fonts: Source Sans 400/400italic/600
+
+//$sans:    "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans:      "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:      Georgia, Times, "Times New Roman", serif;
+$mono-font: "Consolas", Monaco, Menlo, "Courier New", monospace;
+
+$fw-normal:   400;
+$fw-semibold: 600;
+$fw-bold:     600;
+
+$base-font-size:   16px;
+$base-line-height: 1.5em;
+
+$h1-size: 2.25rem;  //36px
+$h2-size: 1.875rem; //30px
+$h3-size: 1.5rem;   //24px
+$h4-size: 1.25rem;  //20px
+$h5-size: 1.125rem; //18px
+$h6-size: 1rem;     //16px
+
+// ----------- Some Generic Breakpoints
+// (more detailed responsive settings are in the components)
+
+$break-xl: 1200px;
+$break-lg: 800px;
+$break-md: 600px;
+$break-sm: 400px;
+
+/**
+ * Tools
+ * Mixins and functions 
+ */
+
+// ----------- tools/mixins
+// ----------- tools/placeholders
+
+/**
+ * Generic
+ * Ground-zero styles 
+ */
+
+// ----------- generic/reset
+// ----------- generic/normalize
+// ----------- generic/box-sizing
+
+/**
+ * Base
+ * Unclassed HTML elements 
+ */
+
+// ----------- base/page
+
+$base-text-color:  $site-color-3;
+//$base-font-size:   $base-font-size;
+//$base-line-height: $base-line-height;
+$page-background:  white;
+
+$global-trans-property:        all;
+$global-trans-duration:       .5s;
+$global-trans-timing-function: ease-out;
+$global-trans-delay:           0;
+
+$hr-margin-top:    $spacing;
+$hr-margin-bottom: $spacing;
+$hr-border:        none;
+$hr-border-bottom: 1px solid $site-color-3;
+
+$transition-time: 0.25s;
+
+// ----------- base/headings
+
+$heading-font:        $sans;
+$heading-color:       $base-text-color;
+$heading-font-weight: $fw-semibold;
+
+$h1-size: 40px;
+$h2-size: 34px;
+$h3-size: 28px;
+$h4-size: 22px;
+$h5-size: 16px;
+$h6-size: 14px;
+
+// ----------- base/paragraphs
+
+$pre-margin-bottom: $spacing;
+
+// ----------- base/links
+
+$link-color:                 $brand-color-0;
+$link-color-visited:         $brand-color-0;
+$link-text-decoration:       underline;
+$link-color-hover:           $brand-color-0;
+$link-text-decoration-hover: none;
+
+// ----------- base/quotes
+
+$blockquote-margin:      0 0 $spacing 0;
+$blockquote-padding:     0 0 0 10px;
+$blockquote-color:       $site-color-6;
+$blockquote-border-left: $site-color-6;
+
+// ----------- base/images
+
+$img-vertical-align: middle;
+
+// ----------- base/figures
+
+$figure-margin:  0;
+$figure-padding: 0;
+
+$figcaption-margin:           5px 0 1rem 0;
+$figcaption-padding:          1rem;
+$figcaption-font-family:      $sans;
+$figcaption-font-size:       .75rem;
+$figcaption-line-height:      1.125rem;
+$figcaption-color:            $site-color-6;
+$figcaption-background-color: $site-color-6;
+
+// ----------- base/lists
+
+$list-margin:    $spacing;
+$dt-font-weight: normal;
+$dt-margin:      1em 0 0 0;
+$dt-padding:     0;
+$dd-margin:      0;
+$dd-padding:     0;
+
+// ----------- base/tables
+
+$table-global-font-family: $sans;
+$table-global-font-size:  .8rem;
+$table-global-line-height: 1.25em;
+$table-global-padding:    .5rem;
+
+$table-hide-static-size: 800px; // hide static tables in mobile
+
+$table-border:                 1px solid $base-text-color;
+
+$table-thead-background-color: $base-text-color;
+$table-thead-th-color:         white;
+
+$table-th-text-align:          left;
+$table-th-font-family:         $sans;
+$table-th-font-weight:         600;
+$table-th-td-padding:          1rem;
+$table-th-td-line-height:      inherit;
+$table-th-vertical-align:      bottom;
+
+$table-td-vertical-align:      top;
+$table-td-text-align:          left;
+
+$admin-table-border-color:           $base-text-color;
+$admin-table-thead-background-color: $base-text-color; 
+
+// ----------- base/forms
+
+/**
+ * Objects
+ * Cosmetic-free design patterns 
+ */
+
+// Our Layout
+// Setting container-max-width at 100% allows for edge-to-edge layout 
+// (and edge-to-edge background color even when a wrap is used)
+// The (optional) wrap sets a max content width
+
+// |-------------------- screen --------------------|
+// |--p--|------------ container -------------|--p--|
+// |----------|---------- wrap ----------|----------|
+
+// ----------- objects/wrappers
+
+$container-max-width:  100%;
+$container-pad:        0 1rem;
+$container-pad-tablet: 0 ($spacing * .75);
+$container-pad-mobile: 0 ($spacing * .5);
+$wrap-max-width:       1200px;
+$wrap-min-width:       100px;
+
+$cmbox-default-background: white;
+$cmbox-default-padding:    4rem;
+$cmbox-default-title:      2rem;
+
+// ----------- objects/grid
+
+$grid-columns:     12;
+$grid-gutter:      3;
+$single-col-width: (100 - (($grid-columns - 1) * $grid-gutter )) / $grid-columns;
+
+// ----------- objects/portfolio
+
+/**
+ * Components
+ * Designed components, chunks of UI 
+ */
+
+// ----------- components/header
+// ----------- components/header.nav.global
+
+$nav-global-font:         $sans;
+$nav-global-font-size:   .75rem;
+$nav-global-line-height:  1em;
+$nav-global-font-weight:  $fw-normal;
+$nav-global-padding:      1rem;
+
+// ----------- components/header.nav.utility
+
+$navutility-holder-bg: $site-color-3;
+$navutility-bg:        $site-color-3;
+$navutility-bg-hover:  $site-color-6;
+
+$navutility-color:       $site-color-9;
+$navutility-color-hover: white;
+
+$navutility-font-size:      $nav-global-font-size;
+$navutility-line-height:    $nav-global-line-height;
+$navutility-margin:         0;
+$navutility-padding:        $nav-global-padding;
+$navutility-font-weight:    $nav-global-font-weight;
+$navutility-text-transform: uppercase;
+
+$navutility-social-icons-margin:      0;
+$navutility-social-icons-pad:         $nav-global-padding;
+$navutility-social-icons-font-size:   $nav-global-font-size;
+$navutility-social-icons-line-height: $nav-global-line-height;
+$navutility-social-icons-color:       $navutility-color;
+$navutility-social-icons-color-hover: $navutility-color-hover;
+$navutility-social-icons-bg:          $navutility-bg;
+$navutility-social-icons-bg-hover:    $navutility-bg-hover;
+
+// ----------- components/header.nav.main
+
+$navmain-font-size:      $nav-global-font-size;
+$navmain-text-transform: none;
+$navmain-button-pad:     ($nav-global-padding + .25rem) $nav-global-padding;
+
+$navmain-holder-bg:   $site-color-6;
+$navmain-bg:          $site-color-6;
+$navmain-bg-hover:    $site-color-9;
+$navmain-color:       white; 
+$navmain-color-hover: white;
+
+// ----------- components/footer
+// ----------- components/buttons
+
+$button-color:               white;
+$button-background:          $brand-color-0;
+$button-text-transform:      uppercase;
+$button-font-weight-default: bold;
+$button-font-weight:         $fw-bold;
+$button-font-size:          .75rem; 
+$button-letter-spacing:      1px;
+$button-padding:             1rem 2rem;
+$button-margin:              1rem 0;
+
+$button-color-hover:      white;
+$button-background-hover: lighten($button-background, 25%);
+
+// ----------- transparent button
+
+$button-trans-color:            white;
+$button-trans-background:       rgba(255,255,255,.125);
+$button-trans-color-hover:      white;
+$button-trans-background-hover: rgba(255,255,255,.25);
+$button-trans-border:           2px solid white;
+
+// ----------- big button
+
+$button-big-padding:   2rem 4rem;
+$button-big-font-size: 1rem;
+
+// ----------- components/alerts
+// ----------- components/breadcrumbs
+// ----------- components/panels
+
+$panel-background-color: $site-color-c;
+$panel-max-width:        600px;
+$panel-padding:          4rem;
+$panel-padding-tablet:   2rem;
+$panel-padding-mobile:   1rem;
+$panel-border:           5px solid $site-color-c;
+$panel-border-radius:    $border-radius;
+$panel-title-color:      $base-text-color;
+$panel-copy-color:       $base-text-color;
+
+// panels for form holder
+$panel-form-background-color: $panel-background-color;
+$panel-form-padding:          2rem;
+$panel-form-border:           $panel-border;
+
+/**
+ * Vendor
+ * Third-party styles 
+ */
+
+// ----------- vendor/accordions
+// ----------- vendor/animatecss
+
+$base-animation-duration:         1s;
+$hinge-animation-duration:        2s;
+$flip-bounce-animation-duration: .75s;
+
+// ----------- vendor/bgslider
+// ----------- vendor/headroom
+// ----------- vendor/mmenu/jquery.mmenu.all
+// ----------- vendor/mmenu.custom
+
+$mmenu-trigger-align: right;
+$mmm-menu-background-color: $site-color-3 !important;
+
+// mmenu font settings
+
+$mmm-font:           $sans;
+$mmm-font-size:      $base-font-size;
+$mmm-line-height:    1em;
+$mmm-text-transform: none;
+
+// mmenu borders
+
+$mmm-li-border: 1px solid white;
+/*
+This variable is just so we can carry the same border
+over to the utility nav items, which appear below the 
+main nav items in mobile mode
+*/
+$mmm-li-border-color: white;
+
+// mmenu link styles
+
+$mmm-link-color:                  $base-text-color; 
+$mmm-link-background-color:       $site-color-3;
+$mmm-link-background-color-hover: $brand-color-0;
+$mmm-link-padding:                12px;
+
+// mmenu the subopen buttons
+
+$mmm-subopen-button: $brand-color-0;
+
+// mmenu submenus
+
+$mmm-sub-background-color: $site-color-3;
+$mmm-sub-border-left:      1px solid white;
+$mmm-sub-link-color:       $base-text-color; 
+$mmm-sub-line-height:      1em;
+$mmm-sub-height:           100%;
+
+// mmenu subopen arrows
+
+$mmm-sub-arrow-color:  rgba(255,255,255,1) !important;
+$mmm-sub-arrow-border: none !important;
+
+// the mmenu utility nav links (they fall under the mmenu main nav links)
+
+$mmm-utility-nav-holder-padding: $mmm-link-padding;
+
+// mmenu navutility styles
+
+$mmm-navutility-links-background:       #aaa;
+$mmm-navutility-social-background:      #888;
+$mmm-navutility-input-padding:         .75rem 1rem .65rem 1rem !important;
+$mmm-navutility-input-text-transform:   uppercase !important;
+$mmm-navutility-input-font-size:       .75rem !important;
+$mmm-navutility-input-background-hover: #eee;
+
+// the mmenu sub-open menus 'back' link
+
+$mmm-subclose-text-transform: uppercase;
+
+// ----------- vendor/responsiveslider
+
+$rslides-margin-bottom:            0;
+$rslides-tap-color:                rgba(0,0,0,0);
+$rslides-nav-top:                  50%;
+$rslides-nav-left:                 0;
+$rslides-nav-z-index:              99;
+$rslides-nav-opacity:              0.5;
+$rslides-nav-opacity-active:       1.0;
+$rslides-tabs-margin:              1rem 0 !important;
+$rslides-tabs-li-margin:           0 1rem 0 0;
+$rslides-tabs-radius:              15px;
+$rslides-tabs-bg-hex:              #ccc;
+$rslides-tabs-bg-rgb:              rgba(0,0,0, .2);
+$rslides-tabs-shadow:              inset 0 0 2px 0 rgba(0,0,0,.3);
+$rslides-tabs-width:               15px;
+$rslides-tabs-height:              15px;
+$rslides-tabs-here-hex:            #222;
+$rslides-tabs-here-rgb:            rgba(0,0,0,.8);
+$rslides-caption-display:          block;
+$rslides-caption-top:              0;
+$rslides-caption-bottom:           0;
+$rslides-caption-left:             0;
+$rslides-caption-right:            0;
+$rslides-caption-padding:          0 3rem;
+$rslides-caption-text-align:       center;
+$rslides-caption-bg-hex:           #000;
+$rslides-caption-bg-rgb:           rgba(0,0,0, 0);
+$rslides-caption-font-margin:      0 0 1rem 0;
+$rslides-caption-font-padding:     0;
+$rslides-caption-font-size:        3rem;
+$rslides-caption-line-height:      1.125em;
+$rslides-caption-font-color:       white;
+$rslides-caption-font-text-shadow: 3px 3px 6px #000;
+
+//$rslides-caption-font-size-lg: 2.5rem;
+//$rslides-caption-font-size-md: 2rem;
+//$rslides-caption-font-size-sm: 1.5rem;
+
+// ----------- vendor/rainbow/solarized.light
+
+/**
+ * MOVE THESE INTO PARTIALS
+ */
+// ----------- theme
+// ----------- responsive
+
+/**
+ * Trumps
+ * Helpers and overrides 
+ */
+
+// ----------- trumps/helpers
+// ----------- trumps/zindex
+
+/**
+ * Media
+ * Print styles 
+ */
+
+// ----------- media/print
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+// Font
+$fh-font-family: $sans !default;
+$fh-font-size: 14px !default;
+$fh-font-color: $base-text-color !default;
+$fh-label-font-size: .85rem;
+$fh-label-line-height: 1em;
+$fh-label-margin-top: 1rem;
+
+// Borders
+$fh-border-radius: 0 !default;
+$fh-border-width: 2px !default;
+$fh-border-style: solid !default;
+$fh-border-color: $base-text-color !default;
+
+// Inputs, Textareas, Select, Option
+$fh-input-padding: .5rem !default;
+$fh-input-height: auto !default;
+$fh-select-height: 40px !default;
+$fh-input-width: 100% !default;
+$fh-input-max-width: 100% !default;
+$fh-input-bg-color: white !default;
+$fh-focus-bg-color: white !default;
+$fh-focus-border-color: $site-color-3 !default;
+$fh-focus-font-color: $site-color-3 !default;
+$fh-textarea-height: 200px !default;
+
+// Select Vendor Styling
+$fh-allow-vendor-styling: true !default;
+
+// Fieldset & Legend Styling
+$fh-fieldset-bare: false !default;
+$fh-background-color: #f6f6f6;
+
+// Buttons & Input Submits
+$fh-button-height: auto !default;
+$fh-button-width: 100% !default;
+$fh-button-max-width: 200px !default;
+$fh-button-font-color: $fh-font-color !default;
+$fh-button-bg-color: $fh-focus-bg-color !default;
+$fh-button-hover-bg-color: $fh-border-color !default;
+$fh-button-hover-font-color: $fh-font-color !default;
+
+// Layout
+$fh-centered: false !default;
+$fh-display: block !default;
+*/
+
+// ----------- modules.nav-mobile.scss
+
+//$nav-mobile-button-pad: 1rem;
+
+// ----------- styles/modules.responsiveslides // basic, responsive slideshow
+// ----------- styles/modules.panel
+// ----------- styles/modules.accordion
+// ----------- styles/modules.animate
+/**
+ * Modules: Part 2 (complex add-ons)
+ */
+
+/* 
+Mobile Nav - mmenu nav
+http://mmenu.frebsite.nl
+*/
+
+// mmenu/mmenu-demo
+// mmenu/jquery.mmenu.all
+
+// ----------- the mobile nav trigger
+
+/**
+ * My custom mmenu styles
+ */
+
+/**
+ * Vendor
+ */
+
+// styles/vendor.plugin
+/*
+Now we apply the custom design on top of this SASS kit.
+Remember to @extend classes, @include mixins, and use BEM styling where appropriate.
+*/
+
+// Custom
+
+/**
+ * Trumps
+ */
+
+// styles/trumps
+
+/**
+ * Media
+ */
+ 
+// responsive
+// styles/media.print

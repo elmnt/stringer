@@ -1,0 +1,42 @@
+/**
+ * Page
+ */
+
+html {
+  color: $base-text-color;
+  font-size: $base-font-size;
+  font-family: $sans;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+html,
+body { 
+  height: 100%; 
+}
+
+body {
+  margin: 0 auto; 
+  background-color: $page-background;
+  font-size: 100%;
+}
+
+a, 
+a img, 
+input, 
+textarea,
+button {
+  @include trans($global-trans-property, $global-trans-duration, $global-trans-timing-function, $global-trans-delay);
+}
+
+hr {
+  margin-top: $hr-margin-top;
+  margin-bottom: $hr-margin-bottom;
+  border: $hr-border;
+  border-bottom: $hr-border-bottom;
+}
+
+strong { 
+  font-weight: bold; 
+  font-weight: $fw-semibold;
+}

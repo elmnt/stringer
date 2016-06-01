@@ -1,0 +1,29 @@
+/*------------------------------------*\
+	Print
+\*------------------------------------*/
+
+* {
+	background: #ffffff;
+	color: #000000!important;
+}
+
+html {
+	font: 100%/1.5 Arial, serif;
+}
+
+/**
+ * Hide
+ */
+.header,
+.footer {
+	display: none;
+}
+
+/**
+ * Make full-width
+ */
+.unit {
+	margin: 0!important;
+	padding: 0!important;
+	width: 100%!important;
+}

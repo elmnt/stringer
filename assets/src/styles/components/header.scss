@@ -1,0 +1,12 @@
+/**
+ * Header
+ */
+
+[role=banner] {
+  //text-align: center;
+}
+
+.header, 
+.header * { 
+  @extend .z6; 
+}
