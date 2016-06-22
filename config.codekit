@@ -194,8 +194,8 @@
 		},
 	"\/assets\/js\/rainbow-custom.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/js\/rainbow-custom.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/rainbow-custom.min.min.js",
 		"outputPathIsOutsideProject": 0,
