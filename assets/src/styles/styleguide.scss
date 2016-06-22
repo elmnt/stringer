@@ -26,3 +26,35 @@
   }
 
 }
+
+
+// ----------- footer styles
+
+.footer p {
+  color: #999fac;
+}
+
+.footer p a {
+  color: white;
+
+  &:visted {
+    color: white;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #999fac;
+  }
+
+}
+
+.footer .button {
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+  }
+
+}

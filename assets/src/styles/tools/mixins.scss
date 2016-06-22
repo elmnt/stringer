@@ -151,7 +151,13 @@ $td = duration
 $tt = timing-function
 $ty = delay
 */
-@mixin trans($tp,$td,$tt,$ty) {
+
+$tp: $global-trans-property; 
+$td: $global-trans-duration;
+$tt: $global-trans-timing-function;
+$ty: $global-trans-delay;
+
+@mixin trans() {
 	-webkit-transition: $tp $td $tt $ty;
 	-moz-transition: $tp $td $tt $ty;
 	-ms-transition: $tp $td $tt $ty;

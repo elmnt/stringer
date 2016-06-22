@@ -1,1 +1,1 @@
-<form action="#" method="post"><input type="text" class="navutility__input" placeholder="SEARCH"></form>
+<form action="#" method="post"><input type="search" class="navutility__input" placeholder="SEARCH"></form>

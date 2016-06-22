@@ -31,7 +31,7 @@ a img,
 input, 
 textarea,
 button {
-  @include trans($global-trans-property, $global-trans-duration, $global-trans-timing-function, $global-trans-delay);
+  @include trans;
 }
 
 hr {

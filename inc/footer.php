@@ -24,13 +24,13 @@
   <div class="container--footer">
   <div class="wrap pad">
     
-    <div class="grid" style="text-align:center;">
-      <div class="single-col" style="text-align:center;">
+    <div class="grid center">
+      <div class="single-col center">
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <p>made by <a href="https://elmnt.com/" target="_blank">elmnt</a></p>
         <p><a href="https://twitter.com/elmnt" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/elmnt" target="_blank"><i class="fa fa-github-alt"></i></a></p>
-        <p><a href="#top" class="scrollanchor button">Return to Top</a></p>
+        <a href="#top" class="scrollanchor button button--trans">Return to Top</a>
         <p>&nbsp;</p>
         <p>&nbsp;</p>
       </div>

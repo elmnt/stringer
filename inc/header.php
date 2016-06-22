@@ -12,7 +12,7 @@
       </ul>
     </div><!-- /.col-6 -->
 
-    <div class="col-6 right">
+    <div class="col-6 right" style="padding-right:1rem;">
       <ul class="list-reset navutility__social">
       <?php include $root.'/inc/nav/navutility-social.php'; ?>
       </ul>

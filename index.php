@@ -16,6 +16,13 @@ include $root.'inc/top.php';
 .rslides img {
   opacity: .25;
 }
+.pre-holder {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.pre-holder pre {
+  margin-top: 0;
+}
 </style>
 
 </head>
@@ -50,7 +57,7 @@ include $root.'inc/top.php';
 
   <div class="grid">
     <div class="col-6">
-      <p><strong>Stringer</strong> is a robust, responsive framework with plenty of optional building blocks. It's not a feature-complete boilerplate, but a good starting point upon which you can develop custom themes. This project is a sandbox, and it changes often.</p>
+      <p><strong>Stringer</strong> is a responsive framework with plenty of optional building blocks. It's not a feature-complete boilerplate, but a good starting point upon which you can develop custom themes. This project is a sandbox, and it changes often.</p>
       <p>A <strong>stringer</strong> is a wooden strip that runs the length of a surfboard, designed to give the board strength &amp; rigidity.</p>
     </div>
     <div class="col-6">
@@ -67,7 +74,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /stringer intro -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== picturefill -->
 
@@ -87,7 +94,7 @@ include $root.'inc/top.php';
     <source srcset="/assets/img/surf-lg.jpg" media="(min-width: 1200px)">
     <source srcset="/assets/img/surf-md.jpg" media="(min-width: 800px)">
     <source srcset="/assets/img/surf-sm.jpg" media="(min-width: 300px)">
-    <img srcset="/assets/img/surf-sm.jpg" alt="<?php echo $picalt; ?>">
+    <img srcset="/assets/img/surf-sm.jpg" alt="alt">
   </picture>
 
 </div>
@@ -96,7 +103,7 @@ include $root.'inc/top.php';
 <div class="container pre-holder">
 <div class="wrap">
 
-  <pre style="margin-top:10px;">
+  <pre>
   <code data-language="html">
     <picture class="fit">
       <source srcset="/assets/img/surf-xl.jpg" media="(min-width: 2000px)">
@@ -111,23 +118,15 @@ include $root.'inc/top.php';
 </div>
 </div>
 
-<div class="container pre-holder">
-  <div class="wrap">
-
-    <p style="margin-top:10px;">The 'data-pfsrcset' and the 'src' attributes will be created &amp; filled dynamically. They <strong>do not</strong> exist in your markup. See source code for accurate picturefill markup.</p>
-
-  </div>
-</div>
-
 <!-- ==================================== /picturefill -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== slider -->
 
 <div class="container">
   <div class="wrap">
-    <h3>Responsive slider with vertically middle-aligned captions &amp; call-to-action (with picturefill)</h3>
+    <h3>Responsive slider with picturefill, and vertical/middle-aligned captions &amp; CTA</h3>
   </div>
 </div>
 
@@ -191,15 +190,9 @@ include $root.'inc/top.php';
 </div>
 </div>
 
-<div class="container pre-holder">
-<div class="wrap">
-  <p class="sg">The responsive slideshow is complex, and can't be implemented by copy-pasting a code snippet. See page source code &amp; src files.</p>
-</div>
-</div>
-
 <!-- ==================================== /slider -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== animate.css
 
@@ -217,7 +210,7 @@ include $root.'inc/top.php';
   <p>&nbsp;</p>
 
   <div class="pre-holder">
-  <pre style="margin-top:10px;">
+  <pre>
   <code data-language="html">
     <div class="cmbox cmbox--basic">
       <div class="cmbox__content cmbox__content--intro">
@@ -234,22 +227,24 @@ include $root.'inc/top.php';
 ==================================== /animate.css -->
 
 
-
 <!-- ==================================== center-aligned, middle-aligned -->
 
 <div class="container">
 <div class="wrap">
 
-  <h3>center-aligned, middle-aligned box</h3>
+  <h3>Center-aligned, middle-aligned box</h3>
   <p class="sg">Fluid vertical alignment with no height settings.</p>
-  <div class="cmbox">
+
+  <div class="cmbox" style="outline:1px solid pink;">
     <div class="cmbox__content">
       <h1 class="cmbox__title">Jackdaws Love My Sphinx of Quartz</h1>
     </div>
   </div>
+  
+  <p>&nbsp;</p>
 
   <div class="pre-holder">
-  <pre style="margin-top:10px;">
+  <pre>
   <code data-language="html">
     <div class="cmbox cmbox--basic">
       <div class="cmbox__content cmbox__content--intro">
@@ -265,7 +260,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /center-aligned, middle-aligned -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== typography -->
 
@@ -307,7 +302,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /typography -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== unordered lists -->
 
@@ -353,7 +348,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /unordered lists -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== ordered lists -->
 
@@ -399,7 +394,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /ordered lists -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== grids -->
 
@@ -504,7 +499,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /grids -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== accordions -->
 
@@ -564,7 +559,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /accordions -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== buttons -->
 
@@ -602,7 +597,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /buttons -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== panel -->
 
@@ -617,7 +612,7 @@ include $root.'inc/top.php';
       <div class="panel">
         <h2 class="panel__title">This is a Panel</h2>
         <p class="panel__copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit anim id est laborum.</p>
-        <a href="#!" class="button button--panel">Call to Action</a>
+        <a href="#!" class="button button--trans">Call to Action</a>
       </div>
     </div>
   
@@ -632,7 +627,7 @@ include $root.'inc/top.php';
           <div class="panel">
             <h2 class="panel__title">Panel Title</h2>
             <p class="panel__copy">Panel copy. Lorem ipsum dolor.</p>
-            <a href="#!" class="button button--panel">Call to Action</a>
+            <a href="#!" class="button button--trans">Call to Action</a>
           </div>
         </div>
       </div>
@@ -646,7 +641,7 @@ include $root.'inc/top.php';
 
 <!-- ==================================== /panel -->
 
-
+<p>&nbsp;</p>
 
 <!-- ==================================== tables -->
 
@@ -687,35 +682,35 @@ include $root.'inc/top.php';
   <p>&nbsp;</p>
 
   <div class="grid pre-holder">
-  <pre>
-  <code data-language="html">
-    <table cellspacing="0" border="0" class="static-table static-table--optional-class">
-      <thead>
-      <tr>
-        <th width="25%">Thead</th>
-        <th width="25%">Thead</th>
-        <th width="25%">Thead</th>
-        <th width="25%">Thead</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-      </tr>
-      <tr>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-        <td>Table cell content</td>
-      </tr>
-      </tbody>
-    </table>
-  </code>
-  </pre>
-  </div><!-- /.grid -->
+    <pre>
+    <code data-language="html">
+      <table cellspacing="0" border="0" class="static-table static-table--optional-class">
+        <thead>
+        <tr>
+          <th width="25%">Thead</th>
+          <th width="25%">Thead</th>
+          <th width="25%">Thead</th>
+          <th width="25%">Thead</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+        </tr>
+        <tr>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+          <td>Table cell content</td>
+        </tr>
+        </tbody>
+      </table>
+    </code>
+    </pre>
+  </div><!-- /.grid pre-holder -->
 
   <h3>Static Table: Option 2</h3>
 
@@ -779,10 +774,7 @@ include $root.'inc/top.php';
       </table>
     </code>
     </pre>
-  </div>
-
-  <p>&nbsp;</p>
-  <p>This is not to imply that there are <strong>only</strong> two options for styling tables. They're just offered as starting points for different style options.</p>
+  </div><!-- /.grid pre-holder -->
 
   <h3>Responsive Table</h3>
   <p>This is a <strong>basic</strong> responsive table. All requirements should be clarified in the project's definition phase, and the proper responsive table layout can be built up from this starting point.</p>
@@ -790,23 +782,23 @@ include $root.'inc/top.php';
   <div class="grid">
 
   <table cellspacing="0" border="0" class="responsive-table responsive-table--optional-class">
-  <thead>
-  <tr>
-    <th width="50%">Thead</th>
-    <th width="25%">Thead</th>
-    <th width="25%">Thead</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td class="mobile-thead">Mobile Thead</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-    <td class="mobile-thead">Mobile Thead</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-    <td class="mobile-thead">Mobile Thead</td>
-    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
-  </tr>
-  </tbody>
+    <thead>
+    <tr>
+      <th width="50%">Thead</th>
+      <th width="25%">Thead</th>
+      <th width="25%">Thead</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="mobile-thead">Mobile Thead</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="mobile-thead">Mobile Thead</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+      <td class="mobile-thead">Mobile Thead</td>
+      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+    </tr>
+    </tbody>
   </table>
 
   </div><!-- /.grid -->
@@ -837,24 +829,31 @@ include $root.'inc/top.php';
       </table>
     </code>
     </pre>
-  </div>
+  </div><!-- /.grid pre-holder -->
 
-  <h3>Admin Tables</h3>
-  <div class="grid">
-  <p>Tables for any admin area start with either a <strong>Static</strong> or <strong>Responsive</strong> table, as noted above. Then we add additional classes for specific admin section styling.</p>
-  </div>
+</div>
+</div>
 
-  <h3>Forms</h3>
-  <p><em>Get starter form code from the page source</em></p>
+<!-- ==================================== /tables -->
 
-  <div class="grid">
-    <div class="single-col" style="margin:0 auto;max-width:800px!important;">
-      <div class="panel--form" style="margin:0 auto;max-width:800px!important;">
+<p>&nbsp;</p>
 
-  <form>
-    <section id="form-input">
-<h2>Input</h2>
+<!-- ==================================== forms -->
 
+<div class="container">
+<div class="wrap">
+
+<h3>Forms</h3>
+
+<div class="grid">
+<div class="single-col" style="margin:0 auto;max-width:800px!important;">
+<div class="panel--form" style="margin:0 auto;max-width:800px!important;">
+
+<form>
+
+<section id="form-input">
+
+  <h2>Input</h2>
 
   <label for="">Input Type Text</label>
   <input type="text" name="input-type-text">
@@ -877,8 +876,6 @@ include $root.'inc/top.php';
   <label for="">Input Type Search</label>
   <input type="search" name="input-type-search">
 
-
-
   <label for="">Input Type Checkbox</label>
   <input type="checkbox" name="input-type-checkbox1"> Value 1<br>
   <input type="checkbox" name="input-type-checkbox2"> Value 2<br>
@@ -892,16 +889,12 @@ include $root.'inc/top.php';
   <label for="">Input Type Range</label>
   <input type="range" name="input-type-range">
 
-
-
   <label for="">Input Type File</label>
   <input type="file" name="input-type-file">
   <input type="file" name="input-type-file">
 
   <label for="">Input Type Color</label>
   <input type="color" name="input-type-color">
-
-
 
   <label for="">Input Type Date</label>
   <input type="date" name="input-type-date">
@@ -918,11 +911,11 @@ include $root.'inc/top.php';
   <label for="">Input Type Week</label>
   <input type="week" name="input-type-week">
 
-
 </section>
-    <section id="form-select-button">
-<h2>Datalist</h2>
 
+<section id="form-select-button">
+
+  <h2>Datalist</h2>
 
   <label for="">Input with Datalist</label>
   <input list="browsers">
@@ -935,112 +928,112 @@ include $root.'inc/top.php';
     <option value="Safari">
   </datalist>
 
-
 </section>
 
-    <section id="form-textarea">
-<h2>Textarea</h2>
+<section id="form-textarea">
 
+  <h2>Textarea</h2>
 
   <label for="textarea">Textarea</label>
   <textarea name="textarea" id="" cols="30" rows="10"></textarea>
 
-
-
-
 </section>
-    <section id="form-select-option">
-<h2>Select and Option</h2>
 
+<section id="form-select-option">
+
+  <h2>Select and Option</h2>
 
   <label for="select-normal">Select Default</label>
   <select name="select-normal" id="">
-      <option value="">Option 1</option>
-      <option value="">Option 2</option>
-      <option value="">Option 3</option>
-  </select>
+  <option value="">Option 1</option>
+  <option value="">Option 2</option>
+  <option value="">Option 3</option>
 
+</select>
 
-  <label for="select-optgroup">Select with Optgroup</label>
-  <select name="select-optgroup" id="">
-      <optgroup label="Optgroup 1">
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-        <option value="">Option 3</option>
-      </optgroup>
+<label for="select-optgroup">Select with Optgroup</label>
+<select name="select-optgroup" id="">
 
-      <optgroup label="Optgroup 2">
-        <option value="">Option 1</option>
-        <option value="">Option 2</option>
-        <option value="">Option 3</option>
-      </optgroup>
-  </select>
+  <optgroup label="Optgroup 1">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+  </optgroup>
 
+  <optgroup label="Optgroup 2">
+    <option value="">Option 1</option>
+    <option value="">Option 2</option>
+    <option value="">Option 3</option>
+  </optgroup>
 
-  <label for="select-multiple">Select Multiple</label>
-  <select name="select-multiple" id="" multiple>
-      <option value="">Option 1</option>
-      <option value="">Option 2</option>
-      <option value="">Option 3</option>
-  </select>
+</select>
+
+<label for="select-multiple">Select Multiple</label>
+<select name="select-multiple" id="" multiple>
+<option value="">Option 1</option>
+<option value="">Option 2</option>
+<option value="">Option 3</option>
+</select>
 
 </section>
-    <section id="form-select-button">
+
+<section id="form-select-button">
+
 <h2>Buttons and Input Type Submit/Reset</h2>
 
+<label for="button-type-button">Button Type Button</label>
+<button type="button">Button</button>
 
-  <label for="button-type-button">Button Type Button</label>
-  <button type="button">Button</button>
+<label for="button-type-reset">Button Type Reset</label>
+<button type="reset">Reset</button>
 
-  <label for="button-type-reset">Button Type Reset</label>
-  <button type="reset">Reset</button>
+<label for="button-type-submit">Button Type Submit</label>
+<button type="submit">Submit</button>
 
-  <label for="button-type-submit">Button Type Submit</label>
-  <button type="submit">Submit</button>
+<label for="">Input Type Button</label>
+<input type="button" name="input-type-button" value="Button">
 
-  <label for="">Input Type Button</label>
-  <input type="button" name="input-type-button" value="Button">
+<label for="">Input Type Reset</label>
+<input type="reset" name="input-type-reset">
 
-  <label for="">Input Type Reset</label>
-  <input type="reset" name="input-type-reset">
+<label for="">Input Type Submit</label>
+<input type="submit" name="input-type-submit">
 
-  <label for="">Input Type Submit</label>
-  <input type="submit" name="input-type-submit">
-  
-  <label for="">Input Type Submit Disabled</label>
-  <input type="submit" name="input-type-submit" disabled>
+<label for="">Input Type Submit Disabled</label>
+<input type="submit" name="input-type-submit" disabled>
 
-  <label for="">Input Type Image</label>
-  <input type="image" name="input-type-image">
-
+<label for="">Input Type Image</label>
+<input type="image" name="input-type-image">
 
 </section>
-    <section id="form-select-fieldset">
+
+<section id="form-select-fieldset">
+
 <h2>Fieldset</h2>
 
-  <fieldset>
+<fieldset>
 
-    <legend>Legend Title</legend>
+<legend>Legend Title</legend>
 
-  <label for="input-text">Input</label>
-    <input type="text" id="input-text">
+<label for="input-text">Input</label>
+<input type="text" id="input-text">
 
-    <label for="input-password">Another Input</label>
-    <input type="text" id="input-password">
-    
-  </fieldset>
+<label for="input-password">Another Input</label>
+<input type="text" id="input-password">
+
+</fieldset>
 
 </section>
-  </form>
+</form>
 
-      </div><!-- /.panel--form -->
-    </div><!-- /.single-col -->
-  </div>
+</div><!-- /.panel--form -->
+</div><!-- /.single-col -->
+</div><!-- /.grid -->
 
 </div>
 </div>
 
-<!-- ==================================== /tables -->
+<!-- ==================================== /forms -->
 
 
 
@@ -1053,15 +1046,21 @@ include $root.'inc/top.php';
 
   <div class="grid">
 
-    <p class="sg">By default, (regular, non-picturefill-enabled) images appear at their native size. They re-size relative to their container on smaller screens.</p>
-    <div class="grid" style="border:1px solid indianred;padding:10px;">
+    <p class="sg">By default, (non-picturefill-enabled) images appear at their native size. If larger than their container, their max-width will conform to the container width. They re-size relative to their container on smaller screens.</p>
+    <div class="grid" style="border:1px solid pink;padding:10px;">
       <img src="/assets/img/surf-sm.jpg">
     </div>
   
     <p>&nbsp;</p>
 
-    <p class="sg">Images with class="fit" will always fill the container, no matter their native size.</p>
-    <div class="grid" style="border:1px solid indianred;padding:10px;">
+    <div class="grid" style="border:1px solid pink;padding:10px;">
+      <img src="/assets/img/surf-xl.jpg">
+    </div>
+    
+    <p>&nbsp;</p>
+
+    <p class="sg">Images with class="fit" will always fill the container, no matter their native size. The "correct" implementation of a responsive image would be the example(s) above, making sure the image you're using is large enough to fill the container at its maximum size. Adding the .fit class would be a fail-safe, if the properly sized image is not available.</p>
+    <div class="grid" style="border:1px solid pink;padding:10px;">
       <img src="/assets/img/surf-sm.jpg" class="fit">
     </div>
 

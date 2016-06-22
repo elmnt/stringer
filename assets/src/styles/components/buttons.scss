@@ -19,7 +19,7 @@ input[type="image"] {
   text-decoration: none; 
   text-transform: $button-text-transform; 
   text-align: center; 
-  font-family: $sans; 
+  font-family: $button-font; 
   font-weight: $button-font-weight-default; 
   font-weight: $button-font-weight; 
   font-size: $button-font-size; 
@@ -29,7 +29,8 @@ input[type="image"] {
   padding: $button-padding;
   margin: $button-margin;
   -webkit-font-smoothing: antialiased;
-  border: none;
+  border: $button-border;
+  border-radius: $button-border-radius;
 
     &:visited {
       color: $button-color;

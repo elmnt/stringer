@@ -102,6 +102,10 @@ $figcaption-background-color: $site-color-6;
 
 // ----------- base/forms
 
+/**
+ * base/forms Placed under button settings for inheritance
+ */
+
 // ----------- base/headings
 
 $heading-font:        $sans;
@@ -170,9 +174,9 @@ $table-global-padding:    .5rem;
 
 $table-hide-static-size: 800px; // hide static tables in mobile
 
-$table-border:                 1px solid $base-text-color;
+$table-border:                 1px solid $brand-color-1;
 
-$table-thead-background-color: $base-text-color;
+$table-thead-background-color: $brand-color-1;
 $table-thead-th-color:         white;
 
 $table-th-text-align:          left;
@@ -185,8 +189,8 @@ $table-th-vertical-align:      bottom;
 $table-td-vertical-align:      top;
 $table-td-text-align:          left;
 
-$admin-table-border-color:           $base-text-color;
-$admin-table-thead-background-color: $base-text-color; 
+$admin-table-border-color:           $brand-color-1;
+$admin-table-thead-background-color: $brand-color-1; 
 
 /**
  * Objects
@@ -236,6 +240,7 @@ $single-col-width: (100 - (($grid-columns - 1) * $grid-gutter )) / $grid-columns
 
 // ----------- components/buttons
 
+$button-font:                $sans;
 $button-color:               white;
 $button-background:          $brand-color-0;
 $button-text-transform:      uppercase;
@@ -245,6 +250,8 @@ $button-font-size:          .75rem;
 $button-letter-spacing:      1px;
 $button-padding:             1rem 2rem;
 $button-margin:              1rem 0;
+$button-border:              none;
+$button-border-radius:       0;
 
 $button-color-hover:      white;
 $button-background-hover: darken($button-background, 25%);
@@ -262,9 +269,42 @@ $button-trans-border:           2px solid white;
 $button-big-padding:   2rem 4rem;
 $button-big-font-size: 1rem;
 
+// ------------------------------------------------------- base/forms
+// placed here so they can inherit button styles
+
+$form-input-padding:             .5rem;
+$form-input-background:           white;
+$form-input-border:               2px solid #999;
+$form-input-border-focus:         2px solid #333;
+$form-input-border-radius:        0;
+$form-input-search-border-radius: $border-radius;
+$form-input-margin-right:         5px;
+
+$form-textarea-min-height: 80px;
+$form-textarea-max-height: 200px;
+$form-textarea-padding:   .5rem;
+
+$form-label-font-weight: $fw-normal;
+$form-label-margin:     .5em 0;
+
+$form-input-button-padding:          $button-padding;
+$form-input-button-margin:           $button-margin;
+$form-input-button-border:           0;
+$form-input-button-background:       $button-background;
+$form-input-button-background-hover: $button-background-hover;
+$form-input-button-color:            $button-color;
+$form-input-button-font:             $button-font;
+$form-input-button-font-weight:      $button-font-weight;
+$form-input-button-border:           $button-border;
+$form-input-button-border-radius:    $button-border-radius;
+
+$form-required-color: red;
+
+// ------------------------------------------------------- /base/forms
+
 // ----------- components/footer
 
-$footer-background: $site-color-9;
+$footer-background: $brand-color-1-d1;
 
 // ----------- components/header
 
@@ -315,15 +355,15 @@ $navmain-text-align:  left;
 
 // ----------- components/panels
 
-$panel-background-color: $site-color-3;
+$panel-background-color: $brand-color-1-d1;
 $panel-max-width:        600px;
 $panel-padding:          4rem;
 $panel-padding-tablet:   2rem;
 $panel-padding-mobile:   1rem;
-$panel-border:           5px solid $site-color-3;
+$panel-border:           5px solid $brand-color-1-l2;
 $panel-border-radius:    $border-radius;
 $panel-title-color:      white;
-$panel-copy-color:       $site-color-c;
+$panel-copy-color:       $brand-color-1-l2;
 
 // panels for form holder
 $panel-form-background-color: $site-color-f;
@@ -346,10 +386,10 @@ $flip-bounce-animation-duration: .75s;
 $accordion-trigger-padding:       .5rem 1rem;
 $accordion-trigger-color:          white;
 $accordion-trigger-hover-color:    white;
-$accordion-background:             $site-color-3;
-$accordion-background-hover-color: $site-color-6;
+$accordion-background:             $brand-color-1-d1;
+$accordion-background-hover-color: $brand-color-1;
 $accordion-open-color:             white;
-$accordion-open-background:        red;
+$accordion-open-background:        $brand-color-0;
 $accordion-content-background:     $site-color-f;
 $accordion-content-padding:        1rem;
 
@@ -362,7 +402,7 @@ $accordion-content-padding:        1rem;
 // ----------- vendor/mmenu.custom
 
 $mmenu-trigger-align: right;
-$mmm-menu-background-color: $site-color-3 !important;
+$mmm-menu-background-color: $brand-color-1-d2 !important;;
 
 // mmenu font settings
 
@@ -383,9 +423,9 @@ $mmm-li-border-color: white;
 
 // mmenu link styles
 
-$mmm-link-color:                  $base-text-color; 
-$mmm-link-background-color:       $site-color-3;
-$mmm-link-background-color-hover: $brand-color-0;
+$mmm-link-color:                  white; 
+$mmm-link-background-color:       $brand-color-1;
+$mmm-link-background-color-hover: $brand-color-1;
 $mmm-link-padding:                12px;
 
 // mmenu the subopen buttons
@@ -394,9 +434,9 @@ $mmm-subopen-button: $brand-color-0;
 
 // mmenu submenus
 
-$mmm-sub-background-color: $site-color-3;
+$mmm-sub-background-color: $brand-color-1-d1;
 $mmm-sub-border-left:      1px solid white;
-$mmm-sub-link-color:       $base-text-color; 
+$mmm-sub-link-color:       white; 
 $mmm-sub-line-height:      1em;
 $mmm-sub-height:           100%;
 
@@ -411,12 +451,12 @@ $mmm-utility-nav-holder-padding: $mmm-link-padding;
 
 // mmenu navutility styles
 
-$mmm-navutility-links-background:       #aaa;
-$mmm-navutility-social-background:      #888;
+$mmm-navutility-links-background:       $brand-color-1-d2;
+$mmm-navutility-social-background:      $brand-color-1-d2;
 $mmm-navutility-input-padding:         .75rem 1rem .65rem 1rem !important;
 $mmm-navutility-input-text-transform:   uppercase !important;
 $mmm-navutility-input-font-size:       .75rem !important;
-$mmm-navutility-input-background-hover: #eee;
+$mmm-navutility-input-background-hover: white;
 
 // the mmenu sub-open menus 'back' link
 
@@ -456,5 +496,46 @@ $rslides-caption-font-size:        3rem;
 $rslides-caption-line-height:      1.125em;
 $rslides-caption-font-color:       white;
 $rslides-caption-font-text-shadow: 3px 3px 6px #000;
+
+// ----------- vendor/form-hack
+
+// Font
+$fh-font-family: 'Raleway', sans-serif !default;
+$fh-font-size: 16px !default;
+$fh-font-color: rgb(40, 40, 40) !default;
+
+// Borders
+$fh-border-radius: 5px !default;
+$fh-border-width: 1px !default;
+$fh-border-style: solid !default;
+$fh-border-color: rgb(200, 200, 200) !default;
+
+// Inputs, Textareas, Select, Option
+$fh-input-height: 40px !default;
+$fh-input-width: 100% !default;
+$fh-input-max-width: 400px !default;
+$fh-input-bg-color: #fff !default;
+$fh-focus-bg-color: rgb(220, 220, 220) !default;
+$fh-focus-border-color: $fh-border-color !default;
+$fh-focus-font-color: $fh-font-color !default;
+
+// Select Vendor Styling
+$fh-allow-select-vendor-styling: true !default;
+
+// Fieldset & Legend Styling
+$fh-fieldset-bare: false !default;
+
+// Buttons & Input Submits
+$fh-button-height: 40px !default;
+$fh-button-width: 100% !default;
+$fh-button-max-width: 200px !default;
+$fh-button-font-color: $fh-font-color !default;
+$fh-button-bg-color: $fh-focus-bg-color !default;
+$fh-button-hover-bg-color: $fh-border-color !default;
+$fh-button-hover-font-color: $fh-font-color !default;
+
+// Layout
+$fh-centered: false !default;
+$fh-display: block !default;
 
 // ----------- vendor/rainbow/solarized.light

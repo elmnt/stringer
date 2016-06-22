@@ -21,10 +21,6 @@
   color: $panel-copy-color;
 }
 
-.button--panel { 
-  margin-bottom: 0 !important; 
-}
-
 // panel for forms
 .panel--form {
   @extend .panel;
