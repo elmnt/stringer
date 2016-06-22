@@ -2,25 +2,23 @@
 
   <ul class="list-reset cf">
 
-<!--#include virtual="/inc/nav/navmain-links.shtml" -->
-
+  <?php include $root.'/inc/nav/navmain-links.php'; ?>
+  
   <div class="mobile__navutility__links">
-<!--#include virtual="/inc/nav/navutility-links.shtml" -->
+  <?php include $root.'/inc/nav/navutility-links.php'; ?>
   </div>
 
   <div class="mobile__navutility__social">
-<!--#include virtual="/inc/nav/navutility-social.shtml" -->
+  <?php include $root.'/inc/nav/navutility-social.php'; ?>
   </div>
 
   <div class="mobile__navutility__search">
-<!--#include virtual="/inc/nav/navutility-search.shtml" -->
+  <?php include $root.'/inc/nav/navutility-search.php'; ?>
   </div>
 
   </ul>
 
 </nav><!-- /#menu -->
-
-<!-- the footer needs more styling -->
 
 <footer class="footer">
   <div class="container--footer">
@@ -45,3 +43,16 @@
 </div><!-- /#page -->
 
 <script src="/assets/js/main.min.js"></script>
+
+<script type="text/javascript">
+$(window).on("load resize scroll",function(e){
+
+  var wdw = $( window ).width();
+  $("#checkw").html( wdw );
+
+  $(".mmenu-trigger").click(function(){
+    console.log("MENU");
+  });
+
+});
+</script>

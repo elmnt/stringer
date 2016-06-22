@@ -10,3 +10,72 @@
 .header * { 
   @extend .z6; 
 }
+
+nav {
+  font-family: $nav-global-font;
+  font-weight: $nav-global-font-weight;
+  font-size: $nav-global-font-size;
+  line-height: $nav-global-line-height;
+  display: block;
+}
+  
+// ----------- Mobile-first navigation display
+
+.mmenu-trigger__holder { 
+  display: block;
+  text-align: $mmenu-trigger-align;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table
+  }
+  &:after {
+    clear: both;
+  }
+
+  @include breakpoint(bp-tablet-portrait) {
+    display: none;
+  }
+
+}
+
+.mmenu-trigger { 
+  font-family: $sans;
+  font-size: 1.5rem;
+  line-height: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.25rem;
+  display: block;
+  color: white;
+
+  &:visted {
+    color: white;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: white;
+  }
+
+}
+
+.mmenu-trigger span {
+  font-weight: normal;
+  font-weight: $fw-normal;
+}
+
+.mmenu-trigger span,
+.mmenu-trigger .fa {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mmenu-trigger .fa { 
+  padding-left: .5rem; 
+  font-weight: normal;
+  font-weight: $fw-normal;
+}
+
+// ----------- /Mobile-first navigation display

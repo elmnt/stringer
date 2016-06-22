@@ -1,5 +1,5 @@
 /**
- * 12-column Grid
+ * Mobile-First 12-column Grid
  */
 
 .grid {
@@ -11,24 +11,36 @@
   }
 }
 
+// Mobile-first single column grid
 [class*='col-'] {
-  float: left; 
-  margin-right: $grid-gutter * 1%; 
-  .grid &:last-of-type {
-    margin-right: 0; 
-  }
-  border-collapse: collapse !important;
+  float: none; 
+  width: 100%; 
+  margin-right: 0;
 }
 
-// column widths
-// (this generates our individual column classes)
-@for $column from 1 through $grid-columns {
-  .col-#{$column} {
-    width: (($single-col-width * $column) + (($column - 1) * $grid-gutter) * 1%)
+// Until we're above this breakpoint
+@include breakpoint(bp-tablet-portrait) {
+
+  // Generate all the column widths
+  @for $column from 1 through $grid-columns {
+    .col-#{$column} {
+      width: (($single-col-width * $column) + (($column - 1) * $grid-gutter) * 1%)
+    }
   }
+
+  // Add multi-column settings
+  [class*='col-'] {
+    float: left; 
+    margin-right: $grid-gutter * 1%; 
+    .grid &:last-of-type {
+      margin-right: 0; 
+    }
+    border-collapse: collapse !important;
+  }
+
 }
 
-/* generates this:
+/* @for $column... generates this:
 .col-1  { width: 5.5833333333%; }
 .col-2  { width: 14.1666666667%; }
 .col-3  { width: 22.75%; }

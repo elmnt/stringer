@@ -4,13 +4,28 @@
 
 .container--navmain {
   background-color: $navmain-holder-bg; 
-  // these top/bottom borders give the entire element uniform top/bottom space
   // border-top: 5px solid $navmain-holder-bg;
-  // border-bottom: 5px solid $navmain-holder-bg; 
+  // border-bottom: 5px solid $navmain-holder-bg;
+  text-align: $navmain-text-align;
+}
+
+/*
+We want to apply inline-block (when the nav element is in desktop mode), 
+so we can easily adjust the alignment (left or right)
+*/
+
+.navmain__nav {
+  display: none;
+
+  @include breakpoint(bp-tablet-portrait) {
+    display: inline-block;
+  }
+
 }
 
 // the top-level ul
 .navmain__links {
+  display: inline-block;
   list-style-type: none; 
   margin: 0 $spacing 0 0;
   padding: 0;
@@ -108,29 +123,3 @@ Give the second-level menus a left border
 }
 
 // ----------- /the sub-menus
-
-// ----------- the mobile nav trigger
-
-.mmenu-trigger__holder {
-  display: none;
-}
-
-/* set up these styles in _responsive.scss
-
-.mmenu-trigger__holder {
-  padding: $navmain-mobile-button-pad;
-  background-color: $navmain-bg;
-  color: $navmain-color;
-  cursor: pointer; 
-  @extend .cf;
-
-  &:hover { 
-    background-color: $navmain-bg-hover; 
-    color: $navmain-color-hover; 
-  }
-
-}
-
-*/
-
-// ----------- /the mobile nav trigger

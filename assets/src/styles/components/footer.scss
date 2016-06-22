@@ -1,7 +1,12 @@
-/*------------------------------------*\
-	Footer
-\*------------------------------------*/
+/**
+ * Footer
+ */
 
 [role=contentinfo] {
     text-align: center;
+}
+
+.container--footer {
+  @extend .container;
+  background-color: $footer-background;
 }

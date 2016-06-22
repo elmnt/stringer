@@ -15,3 +15,14 @@
 .sg__title {
   margin: 3rem auto 0 auto;
 }
+
+// ----------- only show the code samples on bigger screens
+
+.pre-holder {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
+
+}

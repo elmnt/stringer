@@ -33,7 +33,8 @@ force-clear it with this, AND an inline bottom margin.
 
 // ----------- display 
 
-.hide { display: none; }
+.hide,
+.display-none { display: none !important }
 
 // ----------- position 
 

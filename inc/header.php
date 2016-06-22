@@ -3,39 +3,39 @@
 <div class="container--navutility">
 
 	<nav role="navigation">
+
     <div class="grid">
 
     <div class="col-6 left">
       <ul class="list-reset navutility__links cf">
-<!--#include virtual="/inc/nav/navutility-links.shtml" -->
+      <?php include $root.'/inc/nav/navutility-links.php'; ?>
       </ul>
     </div><!-- /.col-6 -->
 
     <div class="col-6 right">
       <ul class="list-reset navutility__social">
-<!--#include virtual="/inc/nav/navutility-social.shtml" -->
+      <?php include $root.'/inc/nav/navutility-social.php'; ?>
       </ul>
       <div class="navutility__search">
-<!--#include virtual="/inc/nav/navutility-search.shtml" -->
+      <?php include $root.'/inc/nav/navutility-search.php'; ?>
       </div>
     </div><!-- /.col-6 right -->
 
-    </div>
-	</nav><!-- /.navutility -->
+    </div><!-- /.grid -->
+
+	</nav>
 
 </div><!-- /.container--nav -->
 
-<!-- virtual="/inc/login-bar.shtml" -->
-
-<div class="container--navmain right">
+<div class="container--navmain">
   
   <div class="mmenu-trigger__holder">
-    <a class="mmenu-trigger" href="#menu"><i class="fa fa-bars fa-lg"></i></a>
+    <a class="mmenu-trigger" href="#menu"><span>MENU</span> <i class="fa fa-bars fa-lg"></i></a>
   </div>
 
-  <nav role="navigation">
+  <nav role="navigation" class="navmain__nav">
     <ul class="navmain__links cf">
-<!--#include virtual="/inc/nav/navmain-links.shtml" -->
+    <?php include $root.'/inc/nav/navmain-links.php'; ?>
     </ul>
   </nav>
 

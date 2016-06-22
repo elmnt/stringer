@@ -1,4 +1,8 @@
-<!--#include virtual="/inc/top.shtml" -->
+<?php 
+$current_page = 'index';
+$page_title = 'This is the home page';
+include $root.'inc/top.php';
+?>
 
 <!-- style guide only -->
 <link rel="stylesheet" href="/assets/css/styleguide.css">
@@ -22,7 +26,7 @@
 
 <div id="page">
 
-<!--#include virtual="/inc/header.shtml" -->
+<?php include $root.'/inc/header.php'; ?>
 
 <div class="content">
 
@@ -54,7 +58,6 @@
         <li>See the <a href="https://github.com/elmnt/stringer">repo</a> for more info</li>     
         <li>I use <a href="https://incident57.com/codekit/">Codekit</a> to manage this project. My config file is in the repo, if you're a Codekit user.</li>
         <li>I'm using the (very customizable) jQuery <a href="http://mmenu.frebsite.nl">mmenu</a> system for mobile navigation.</li>
-        <li>Stringer uses an <a href="http://www.computerhope.com/jargon/s/shtml.htm" target="_blank">SHTML</a> file structure for SSI (server side includes), as per the practice at my agency. With very little effort, you can adapt it to use PHP, for instance.</li>
       </ul>
     </div>
   </div>
@@ -143,7 +146,7 @@
         </picture>
         <div class="caption">
         <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
+          <h1>Frontside</h1>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
           <a href="#!" class="button button--trans button--big">Call to Action</a>
         </div>
@@ -159,7 +162,7 @@
         </picture>
         <div class="caption">
         <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
+          <h1>Backside</h1>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
           <a href="#!" class="button button--trans button--big">Call to Action</a>
         </div>
@@ -175,7 +178,7 @@
         </picture>
         <div class="caption">
         <div class="caption-contents">
-          <h1>Jackdaws Love Sphinx of Quartz</h1>
+          <h1>Duck Dive</h1>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p> -->
           <a href="#!" class="button button--trans button--big">Call to Action</a>
         </div>
@@ -198,7 +201,7 @@
 
 
 
-<!-- ==================================== animate.css -->
+<!-- ==================================== animate.css
 
 <div class="container">
 <div class="wrap">
@@ -213,7 +216,6 @@
 
   <p>&nbsp;</p>
 
-  <!--
   <div class="pre-holder">
   <pre style="margin-top:10px;">
   <code data-language="html">
@@ -225,12 +227,11 @@
   </code>
   </pre>
   </div>
-  -->
 
 </div>
 </div>
 
-<!-- ==================================== /animate.css -->
+==================================== /animate.css -->
 
 
 
@@ -582,27 +583,7 @@
       <a href="#!" class="button">Submit</a>
       </code>
       </pre>
-    </div>
-
-    <h5 class="sg">Standard Button - Alternate Color 1</h5>
-    <a href="#!" class="button button--altone">Submit</a>
-    <div class="pre-holder">
-      <pre>
-      <code data-language="html">
-      <a href="#!" class="button button--altone">Submit</a>
-      </code>
-      </pre>
-    </div>
-
-    <h5 class="sg">Standard Button - Alternate Color 2</h5>
-    <a href="#!" class="button button--alttwo">Submit</a>
-    <div class="pre-holder">
-      <pre>
-      <code data-language="html">
-      <a href="#!" class="button button--alttwo">Submit</a>
-      </code>
-      </pre>
-    </div>  
+    </div> 
 
     <h5 class="sg">Big Button</h5>
     <a href="#!" class="button button--big">Call to Action</a>
@@ -610,26 +591,6 @@
       <pre>
       <code data-language="html">
       <a href="#!" class="button button--big">Call to Action</a>
-      </code>
-      </pre>
-    </div>
-
-    <h5 class="sg">Big Button - Alternate Color 1</h5>
-    <a href="#!" class="button button--big button--altone">Call to Action</a>
-    <div class="pre-holder">
-      <pre>
-      <code data-language="html">
-      <a href="#!" class="button button--big button--altone">Call to Action</a>
-      </code>
-      </pre>
-    </div>
-
-    <h5 class="sg">Big Button - Alternate Color 2</h5>
-    <a href="#!" class="button button--big button--alttwo">Call to Action</a>
-    <div class="pre-holder">
-      <pre>
-      <code data-language="html">
-      <a href="#!" class="button button--big button--alttwo">Call to Action</a>
       </code>
       </pre>
     </div>
@@ -1116,15 +1077,9 @@
 
 </div><!-- /.content -->
 
-<!--#include virtual="/inc/footer.shtml" -->
+<?php include $root.'/inc/footer.php'; ?>
 
 <!-- style guide only -->
-<!-- to include markup:
-<pre><code data-language="html">code-goes-here</code></pre>
-<pre><code data-language="css">code-goes-here</code></pre>
-<pre><code data-language="php">code-goes-here</code></pre>
-<pre><code data-language="javascript">code-goes-here</code></pre>
--->
 <script src="/assets/js/rainbow-custom.min.js"></script>
 
 <!-- include this only on pages with a slider -->

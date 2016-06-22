@@ -2,14 +2,28 @@
  * Header - Nav: Utility
  */
 
-.container--navutility { 
+.container--navutility {
+
+  @extend .container;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+
+  // hide it in mobile-first display
+  display: none;
+
   background-color: $navutility-holder-bg; 
-  // these top/bottom borders give the entire element uniform top/bottom space
   border-top: 5px solid $navutility-holder-bg;
-  border-bottom: 5px solid $navutility-holder-bg; 
+  border-bottom: 5px solid $navutility-holder-bg;
+
+    // and show it above bp-tablet-portrait size
+    @include breakpoint(bp-tablet-portrait) {
+      display: block;
+    }
+
 }
 
-// display settings for the ul
+// the wrappers (uls: links & social and a div: the search field)
 .navutility__links,
 .navutility__social,
 .navutility__search {
@@ -19,15 +33,14 @@
 
 // ----------- links
 
-// the ul for the links
-.navutility__links {}
-
 .navutility__links li {
   display: inline-block; // make sure to comment out the whitespace in the list items
-
+  
+  /*
   &:first-of-type {
     margin-left: $spacing;
   }
+  */
 
 }
 .navutility__links a {
@@ -74,12 +87,17 @@
 
 }
 
-// ---------------------- Add Styles:
+// ---------------------- the search input field
 
 .navutility__input {
   margin: 0 $spacing 0 0;
   display: inline-block;
-  width: 240px !important;
+  width: 180px;
+
+    @include above(900px) {
+      width: 240px;
+    }
+
   font-size: 12px !important;
   border: none !important;
 }

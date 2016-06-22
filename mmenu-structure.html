@@ -3,39 +3,41 @@
 <head></head>
 <body>
 
-<!-- open page - page:header(trigger)/content/menu -->
-<div id="page">
+  <!-- This is a quick display of the basic mmenu structure -->
 
-<header class="header">
-  <div class="nav-trigger"><a class="mmenu-trigger" href="#menu">Menu</a></div>
-</header>
+  <!-- open page - page:header(trigger)/content/menu -->
+  <div id="page">
 
-<!-- open content - page:header(trigger)/content/menu -->
-<div class="content"></div><!-- /.content -->
+  <header class="header">
+    <div class="nav-trigger"><a class="mmenu-trigger" href="#menu">Menu</a></div>
+  </header>
 
-<!-- the menu - page:header(trigger)/content/menu -->
-<nav id="menu"></nav>
+  <!-- open content - page:header(trigger)/content/menu -->
+  <div class="content"></div><!-- /.content -->
 
-<footer></footer>
+  <!-- the menu - page:header(trigger)/content/menu -->
+  <nav id="menu"></nav>
 
-<!-- all site scripts -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<!-- more -->
+  <footer></footer>
 
-<!-- add the mmenu scripts -->
-<script type="text/javascript" src="/assets/js/mmenu/jquery.mmenu.min.all.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $("#menu").mmenu({
-     "offCanvas": {
-        "position": "right"
-     }
+  <!-- all site scripts -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- more -->
+
+  <!-- add the mmenu scripts -->
+  <script type="text/javascript" src="/assets/js/mmenu/jquery.mmenu.min.all.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $("#menu").mmenu({
+       "offCanvas": {
+          "position": "right"
+       }
+    });
   });
-});
-</script>
+  </script>
 
-<!-- close page - page:header(trigger)/content/menu -->
-</div><!-- /#page -->
+  <!-- close page - page:header(trigger)/content/menu -->
+  </div><!-- /#page -->
 
 </body>
 </html>

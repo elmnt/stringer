@@ -26,12 +26,6 @@ Use all min-width
  * Global variables, config
  */
 
-/*
-@import "settings/global";
-@import "settings/colors";
-@import "settings/type";
-@import "settings/responsive";
-*/
 @import "variables";
 
 /**
@@ -74,7 +68,7 @@ Use all min-width
 
 @import "objects/wrappers";
 @import "objects/grid";
-@import "objects/portfolio";
+// @import "objects/portfolio";
 
 /**
  * Components
@@ -86,7 +80,6 @@ Use all min-width
 @import "components/buttons";
 @import "components/footer";
 @import "components/header";
-@import "components/header.nav.global";
 @import "components/header.nav.utility";
 @import "components/header.nav.main";
 @import "components/panels";
@@ -104,12 +97,13 @@ Use all min-width
 @import "vendor/mmenu.custom";
 @import "vendor/responsiveslider";
 @import "vendor/rainbow/solarized.light";
+@import "vendor/hamburgers/hamburgers";
 
 /**
  * MOVE THESE INTO PARTIALS
  */
 
-@import "responsive";
+@import "custom";
 
 /**
  * Trumps

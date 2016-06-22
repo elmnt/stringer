@@ -3,10 +3,6 @@
  * credit: http://jsfiddle.net/ChrisStanyon/z9fWG/
  */
 
-$accordion-trigger-padding: .5rem 1rem;
-$accordion-background-color: $site-color-3;
-$accordion-content-padding: 1rem;
-
 #accordion li ul { display: none; }
 
 .accordion__item {
@@ -16,13 +12,32 @@ $accordion-content-padding: 1rem;
 .accordion__trigger {
   display: block;
   padding: $accordion-trigger-padding;
-  background-color: $accordion-background-color;
+  color: $accordion-trigger-color;
+  background-color: $accordion-background;
   text-decoration: none;
+
+  &:visited {
+    color: $accordion-trigger-color;
+    background-color: $accordion-background;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accordion-trigger-hover-color;
+    background-color: $accordion-background-hover-color;
+  }
+
+}
+
+// the open state
+.accordion__item .open {
+  color: $accordion-open-color;
+  background-color: $accordion-open-background;
 }
 
 .accordion__content-holder {
   @extend .list-reset;
-  background-color: white; 
+  background-color: $accordion-content-background;
 }
 
 .accordion__content {

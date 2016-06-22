@@ -5,6 +5,11 @@
 html {
   color: $base-text-color;
   font-size: $base-font-size;
+
+    @include breakpoint(bp-tablet-landscape) {
+      font-size: $base-font-size-lg;
+    }
+
   font-family: $sans;
   line-height: $base-line-height;
   -webkit-font-smoothing: subpixel-antialiased !important;

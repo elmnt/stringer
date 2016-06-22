@@ -2,45 +2,52 @@
  * Mixins
  */
 
-
 /**
  * Convert pixels to REMs with fallback for older browsers
  * Example usage:
  * @include font-size(14px)
  */
+
+/*
 @mixin font-size($size) {
 	font-size: $size;
 	font-size: ($size / $base-font-size) * 1rem;
 }
-
-
+*/
 
 /**
  * Add a breakpoint
  * Example usage:
- * @include breakpoint(bp2) { // css }
+ * @include breakpoint(bp-tablet-portrait) { // css }
  */
-@mixin breakpoint($size) {
-	@if $size == bp2 {
-		@media (min-width: $bp2) { @content; }
-	}
-	@else if $size == bp3 {
-		@media (min-width: $bp3) { @content; }
-	}
-	@else if $size == bp4 {
-		@media (min-width: $bp4) { @content; }
-	}
-	@else if $size == bp5 {
-		@media (min-width: $bp5) { @content; }
-	}
-	@else if $size == bp6 {
-		@media (min-width: $bp6) { @content; }
-	}
-	@else if $size == bp7 {
-		@media (min-width: $bp7) { @content; }
-	}
-}
 
+/* For reference:
+$bp-mobile-landscape: 480px;
+$bp-tablet-portrait:  768px;
+$bp-tablet-landscape: 1024px;
+$bp-laptop:           1280px;
+$bp-desktop:          1440px;
+*/
+
+@mixin breakpoint($size) {
+
+	@if $size == bp-mobile-landscape {
+		@media only screen and (min-width: $bp-mobile-landscape) { @content; }
+	}
+	@else if $size == bp-tablet-portrait {
+		@media only screen and (min-width: $bp-tablet-portrait) { @content; }
+	}
+	@else if $size == bp-tablet-landscape {
+		@media only screen and (min-width: $bp-tablet-landscape) { @content; }
+	}
+	@else if $size == bp-laptop {
+		@media only screen and (min-width: $bp-laptop) { @content; }
+	}
+	@else if $size == bp-desktop {
+		@media only screen and (min-width: $bp-desktop) { @content; }
+	}
+
+}
 
 
 /**
@@ -48,10 +55,10 @@
  * Example usage:
  * @include below(200px) { // css }
  */
-@mixin below($size) {
-	@media (max-width: $size) { @content; }
-}
 
+@mixin below($size) {
+	@media only screen and (max-width: $size) { @content; }
+}
 
 
 /**
@@ -59,8 +66,9 @@
  * Example usage:
  * @include above(200px) { // css }
  */
+
 @mixin above($size) {
-	@media (min-width: $size) { @content; }
+	@media only screen and (min-width: $size) { @content; }
 }
 
 

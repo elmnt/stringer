@@ -1,8 +1,0 @@
-<div class="container loginbuttons__holder" style="background-color:white!important;">
-<div class="wrap" style="text-align:right;">
-
-  <a href="#!" class="button">Login to the Web App</a>
-  <a href="#!" class="button">Make Calls</a>
-
-</div>
-</div>
