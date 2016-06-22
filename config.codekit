@@ -181,17 +181,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/js\/jquery.sticky.min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/js\/jquery.sticky.min.js",
-		"outputAbbreviatedPath": "\/assets\/js\/jquery.sticky.min.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/js\/main.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -293,8 +282,8 @@
 		},
 	"\/assets\/src\/js\/jquery.sticky.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/src\/js\/jquery.sticky.js",
 		"outputAbbreviatedPath": "\/assets\/js\/jquery.sticky.min.js",
 		"outputPathIsOutsideProject": 0,
@@ -1407,12 +1396,12 @@
 		"useLibsass": 0
 		},
 	"\/assets\/src\/styles\/vendor\/form-hack.scss": {
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/assets\/src\/styles\/vendor\/form-hack.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/form-hack.css",
 		"outputPathIsOutsideProject": 0,
