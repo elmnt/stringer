@@ -1,0 +1,32 @@
+/**
+ * Styles for the sticky.js plugin
+ */
+
+/* 
+#sticky-wrapper,
+.sticky-wrapper,
+.is-sticky
+*/
+
+/*
+.header,
+#sticky-wrapper,
+.sticky-wrapper,
+.is-sticky {
+  z-index: 6 !important;
+}
+*/
+
+.sticky-wrapper,
+.is-sticky {
+  @include trans;
+  @include forcesmooth;
+}
+
+.sticky-wrapper {
+  opacity: 1;
+}
+
+.is-sticky {
+  opacity: .85;
+}

@@ -7,3 +7,15 @@
  * and use BEM formatting.
  *
  */
+
+/*
+#sticky-wrapper,
+.sticky-wrapper,
+.is-sticky, {
+  @extend .z6;
+}
+*/
+
+.rslides_container {
+  z-index: -1 !important;
+}

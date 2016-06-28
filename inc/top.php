@@ -28,10 +28,6 @@ $root = $_SERVER["DOCUMENT_ROOT"];
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<!-- Removed:
-<script src="/assets/js/modernizr-2.8.3.min.js"></script>
--->
-
 <style>
 /*
 #checkw {

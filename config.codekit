@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/sticky.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/sticky.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/css\/styleguide.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -269,17 +278,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/src\/js\/jquery.input-placeholder-polyfill.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/assets\/src\/js\/jquery.input-placeholder-polyfill.js",
-		"outputAbbreviatedPath": "\/assets\/js\/jquery.input-placeholder-polyfill.min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/assets\/src\/js\/jquery.sticky.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -299,7 +297,7 @@
 		"outputAbbreviatedPath": "\/assets\/js\/main.min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
+		"outputStyle": 2,
 		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/src\/js\/mmenu\/addons\/addon-template.js": {
@@ -1244,6 +1242,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/src\/styles\/objects\/wrappers.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/wrappers.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/src\/styles\/pages\/page.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/styles\/pages\/page.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
@@ -2323,6 +2337,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/src\/styles\/vendor\/sticky.scss": {
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/src\/styles\/vendor\/sticky.scss",
+		"outputAbbreviatedPath": "\/assets\/css\/sticky.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/inc\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2520,14 +2550,20 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/src\/js\/plugins.js",
+			"linkedFileAbbreviatedPath": "\/assets\/src\/js\/jquery.sticky.js",
 			"position": 5,
 			"type": 1
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/assets\/src\/js\/settings.js",
+			"linkedFileAbbreviatedPath": "\/assets\/src\/js\/plugins.js",
 			"position": 6,
+			"type": 1
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/src\/js\/settings.js",
+			"position": 7,
 			"type": 1
 			}
 		]

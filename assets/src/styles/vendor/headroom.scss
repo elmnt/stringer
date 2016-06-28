@@ -23,18 +23,6 @@ from an element in response to a scroll event:
   left: 0;
   top: 0;
 }
-/**
- * Note: I have omitted any vendor-prefixes for clarity.
- * Adding them is left as an exercise for the reader.
- */
-
- /*
-transitions:
-$tp = property (usually "all")
-$td = duration
-$tt = timing-function
-$ty = delay
-*/
 
 .headroom,
 .headroom--pinned,
@@ -42,7 +30,7 @@ $ty = delay
 .headroom--top,
 .headroom--not-top {
   //transition: transform 500ms linear;
-  @include trans(all,500ms,ease-in-out,0);
+  @include trans;
   @include forcesmooth;
 }
 

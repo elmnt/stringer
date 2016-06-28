@@ -92,11 +92,18 @@ https://css-tricks.com/optimizing-large-scale-displays/?utm_campaign=CSS%2BLayou
 //@import "vendor/bgslider";
 //@import "vendor/form-hack";
 //@import "vendor/headroom";
+@import "vendor/sticky";
 @import "vendor/mmenu/jquery.mmenu.all";
 @import "vendor/mmenu.custom";
 @import "vendor/responsiveslider";
 @import "vendor/rainbow/solarized.light";
 //@import "vendor/hamburgers/hamburgers";
+
+/**
+ * Pages
+ */
+
+@import "pages/page";
 
 /**
  * Custom styles

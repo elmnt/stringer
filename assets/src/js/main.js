@@ -1,14 +1,8 @@
-/* 
+/*
 This is a compiled/minified file that contains:
 
-1. jQuery
-
-2. Vendor plugins (APPENDED in CodeKit), 
-such as headroom.js, responsiveslides.js, etc.
-
-3. plugins.js
-Custom settings for any scripts plugins in #2
-
-4. settings.js
-Manipulating UI elements (animation, injecting styles, etc.)
+1. jQuery ( Prepended in CodeKit )
+2. All vendor plugins in use ( Appended in CodeKit )
+3. plugins.js ( Custom settings for plugins in #2, appended in CodeKit )
+4. settings.js ( Manipulating the DOM, appended in CodeKit )
 */
