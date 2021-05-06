@@ -1,3 +1,5 @@
+This project is old and dusty, and is no longer supported o_O
+
 # Stringer
 
 _A starter kit for new web projects, incorporating the jQuery mmenu system_
